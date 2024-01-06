@@ -1,0 +1,81 @@
+@media only screen and (max-width:992px) {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        border: 2px solid red;
+        overflow: scroll;
+    }
+
+ /* section1 section1 section1 section1 */
+    .container .section1 .navbar ul {
+        display: none;
+    }
+
+    .container .section1 .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 700px;
+        background-image: linear-gradient(#C2EED3 95%, white);
+    }
+
+    .container .section1 .wrapper .main-section {
+        width: 50%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        transform: translate(0px, 0px);
+        justify-content: center;
+    }
+
+    .container .section1 .wrapper .main-section .wrappe-h1 {
+        width: 100%;
+        height: 120px;
+    }
+
+    .container .section1 .wrapper .main-section .wrappe-h1 h1 {
+        margin: 0;
+        transform: translate(0px, 0px);
+    }
+
+    .container .section1 .wrapper .main-section .wrapper-p {
+        width: 100%;
+        height: 130px;
+        margin: 0;
+        transform: translate(0px, 0px);
+        font-size: 25px;
+    }
+
+    .container .section1 .wrapper .main-section .wrapper-p br {
+        display: none;
+    }
+
+    .container .section1 .wrapper .girl {
+        width: 50%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .section1 .wrapper .girl img {
+        margin: 0px;
+        transform: translate(0px, 0px);
+        box-shadow: 4px 4px 20px;
+    }
+
+/* section2 section2 section2 section2 section2 */
+.container .section2{
+    width: 100%;
+    height: 1000px;
+ border: solid black 3px;
+ display: flex;
+}
+
+.container .section2 card-wrapper{
+    width: 100%;
+    height: 800px;
+    border: red 3px solid;
+}
+}

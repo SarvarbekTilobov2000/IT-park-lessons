@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 15vh;
+  width: 100%;
+  background-color: #6ACD9E;
+  text-align: center;
+  padding-top: 2rem;
+}
+.header h1 {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.main {
+  height: 70vh;
+  width: 100%;
+  background-color: #8CC5D5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .card {
+  width: 20%;
+  height: 80%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px #6ACD9E;
+  font-family: sans-serif;
+  padding-bottom: 1.2rem;
+}
+.main .card .avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.main .card .status {
+  color: #7F7F7F;
+}
+.main .card button {
+  width: 70%;
+  height: 35px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+.main .card icons {
+  display: flex;
+}
+
+.footer {
+  height: 15vh;
+  width: 100%;
+  background-color: #7F7F7F;
+  text-align: center;
+  padding-top: 2rem;
+}
+.footer h1 {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}/*# sourceMappingURL=style.css.map */

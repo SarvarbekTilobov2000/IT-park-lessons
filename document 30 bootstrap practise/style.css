@@ -1,0 +1,33 @@
+body{
+    background-color: #EFEFEF !important;
+}
+.card_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.banner_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+i{
+    font-size: 9rem;
+    color:#fff;
+    opacity: 50%;
+}
+
+@media only screen and (max-width:480px){
+    .card_wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .banner_wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    i{
+        font-size: 6rem;
+        color:#fff;
+        opacity: 50%;
+    }
+}

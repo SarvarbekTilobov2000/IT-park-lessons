@@ -1,0 +1,270 @@
+*{
+    margin: 0px;
+    padding: 0px;
+ 
+}
+
+.container{
+position: relative;
+width: 100%;    
+height: 600px   ;
+position: absolute;
+background-image: linear-gradient(to bottom right, #583cf4 , #eb56f3);
+
+}
+
+.official-menu{ 
+    width: 80%;
+    height: 480px;  
+margin: 50px 50px 0px 125px; 
+background-color: aliceblue ;
+}
+
+.menu1{
+    display: inline-block;
+    position: relative;
+    width:60%;
+    height: 480px;
+    background-image: url(./nature-7870374_1280.webp);
+    background-size:cover ;
+    }
+
+.menu1 .htp{
+    position: relative;
+    text-align: center;
+    width: 550px;
+    height: 180px;
+    margin: 80px 0px 0px 30px    ;
+    color: azure ;
+}
+
+.menu1 .htp h1{
+    font-size: 60px;
+}
+
+.menu1 .htp p{
+    font-size: 20px;
+}
+
+    .menu2{
+     position: absolute;
+       width: 410px;
+        height: 480px;
+       top: 50px;
+       right: 125px;
+    display: inline-block;
+
+    }
+        
+    .menu2 h3{
+        position: relative;
+        top: 130px;
+        left: 150px;
+  display:inline-block;
+  color: #2205c3 
+    }
+
+.check{
+    width: 75%;
+    height: 15px;
+    border-radius:15px; 
+    border: 50px;
+    padding: 10px;
+    background-color: rgb(234, 226, 226);
+    position: absolute;
+    top: 200px;
+    left: 45px;
+}
+  
+.check2{
+    width: 75%;
+    height: 15px;
+    border-radius:15px; 
+    border: 50px;
+    padding: 10px;
+    background-color: rgb(234, 226, 226);
+    position: absolute;
+    top: 250px;
+    left: 45px;
+}
+
+.checkboks{
+    border: 5px solid black;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 300px;
+    left: 65px;    
+}
+
+.menu2 p{
+    position: absolute;
+    top: 300px;
+left: 85px;
+    display: inline-block;  
+    font-size: 15px;
+}
+
+.menu2 .h44{
+    position:absolute;
+    top: 300px;
+    left: 250px;
+    font-size: 15px;
+}
+
+.menu2 .hh3{
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    background-image: linear-gradient(to bottom right, #2205c3 , #ed41f6);
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    position: absolute;
+    top: 340px;
+    left: 150px;
+}
+
+.designet{
+    position:relative;
+    top: 20px;
+    left: 480px;
+    font-style:bolder;
+font-size: 25px;
+
+}
+
+@media only screen and (max-width:600px){
+
+    .container{
+       
+        width: 100%;    
+        height: 950px   ;
+        position: absolute;
+        background-image: linear-gradient(to bottom right, #583cf4 , #eb56f3);
+        overflow:hidden;
+        }
+
+        .official-menu{ 
+            width: 465px;
+            height: 461px;  
+        margin: 50px 50px 0px 125px; 
+        background-color: aliceblue ;
+        }
+
+        .menu1{
+            display: inline-block;
+            position: absolute;
+            width: 580px;
+            height: 480px;
+            background-image: url(./nature-7870374_1280.webp);
+            background-size:cover ;
+        left: 10px;
+            }
+
+            .menu1 .htp{
+                position: relative;
+                text-align: center;
+                width: 550px;
+                height: 180px;
+                margin: 80px 0px 0px 30px    ;
+                color: azure ;
+            }
+
+            .menu1 .htp h1{
+                font-size: 60px;
+            }
+            
+            .menu1 .htp p{
+                font-size: 20px;
+            }
+
+            .menu2{
+                position: absolute;
+                  width: 410px;
+                   height: 480px;
+                  top: 496px;
+                  left: 100px;
+               display: inline-block;
+           
+               }
+
+               .menu2 h3{
+                position: relative;
+                top: 130px;
+                left: 150px;
+          display:inline-block;
+          color: #2205c3 
+            }
+        
+        .check{
+            width: 75%;
+            height: 15px;
+            border-radius:15px; 
+            border: 50px;
+            padding: 10px;
+            background-color: rgb(234, 226, 226);
+            position: absolute;
+            top: 200px;
+            left: 45px;
+        }
+          
+        .check2{
+            width: 75%;
+            height: 15px;
+            border-radius:15px; 
+            border: 50px;
+            padding: 10px;
+            background-color: rgb(234, 226, 226);
+            position: absolute;
+            top: 250px;
+            left: 45px;
+        }
+        
+        .checkboks{
+            border: 5px solid black;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 300px;
+            left: 65px;    
+        }
+        
+        .menu2 p{
+            position: absolute;
+            top: 300px;
+        left: 85px;
+            display: inline-block;  
+            font-size: 15px;
+        }
+        
+        .menu2 .h44{
+            position:absolute;
+            top: 300px;
+            left: 250px;
+            font-size: 15px;
+        }
+        
+        .menu2 .hh3{
+            display: inline-block;
+            width: 100px;
+            height: 20px;
+            background-image: linear-gradient(to bottom right, #2205c3 , #ed41f6);
+            text-align: center;
+            border-radius: 15px;
+            padding: 5px;
+            position: absolute;
+            top: 340px;
+            left: 150px;
+        }
+
+        .designet{
+            position:relative;
+            top: 400px;
+            left: 200px;
+            font-style:bolder;
+        font-size: 25px;
+        
+        }
+
+}

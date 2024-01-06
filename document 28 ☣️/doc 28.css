@@ -1,0 +1,773 @@
+  @import url('https://fonts.googleapis.com/css2?family=Combo&family=Montserrat:wght@400;700&family=Nova+Square&family=Nunito+Sans:opsz,wght@6..12,500&family=Revalia&family=Roboto&family=Roboto+Mono:wght@500&display=swap');
+
+  .container .floor3 .info button,
+  .container .floor3 .info h2,
+  .container .floor3 .info p,
+  .floor7 .block .block2 span,
+  .floor9 .infocard .loginpage span,
+  .floor10 .department .products p {
+      float: right
+  }
+
+  .container .floor4 .cards .card p,
+  .container .floor5 p,
+  .container footer .card ul li,
+  .container .floor7 .block .block2 .size {
+      opacity: 0.7;
+  }
+
+  .colorblack {
+      color: black !important;
+  }
+
+  .floor7 .block .block2 .colorgreen,
+  .container .floor8 ul li,
+  .floor9 .infocard .loginpage .colorgreen,
+  .floor9 .infocard .loginpage p,
+  .floor10 .department .products ul .li .colorgreen,
+  .floor10 .department .products p span {
+      color: green;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .container {
+      width: 1260px;
+      padding: 0px 30px;
+      position: relative;
+      margin: 0px auto;
+  }
+
+  .container nav {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .container nav ul li {
+      list-style: none;
+      display: inline-table;
+      margin: 0px 20px;
+  }
+
+  .container nav .blog3 .item {
+      margin: 0px 5px;
+  }
+
+  .container nav button,
+  .floor1 .info button {
+      color: white;
+      background-color: green;
+      border: none;
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+  }
+
+  .container .floor1 {
+      width: 100%;
+      display: flex;
+      font-family: sans-serif;
+      align-items: center;
+  }
+
+
+  .container .floor1 .info {
+      width: 60%;
+      margin: 50px 0px 0px 40px;
+  }
+
+  .container .floor1 .info button {
+      margin-top: 30px;
+
+  }
+
+  .container .floor1 .smimg {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: relative;
+      top: 100px;
+      left: 180px;
+
+  }
+
+  .container .floor1 .info h1 {
+      font-size: 60px;
+      font-weight: 700;
+  }
+
+  .container .floor1 .info span {
+      color: green;
+  }
+
+  .container .floor1 .info p {
+      opacity: 0.7;
+  }
+
+  .container .floor1 img {
+      width: 400px;
+      height: 400px;
+  }
+
+  /* FLOOR2  */
+  .container .floor2 {
+      width: 100%;
+      margin-top: 120px;
+      display: flex;
+      font-family: sans-serif;
+  }
+
+  .container .floor2 .menu {
+      width: 30%;
+      padding: 20px;
+  }
+
+  .container .floor2 .menu ul {
+      padding: 30px;
+  }
+
+  .container .floor2 .menu ul li {
+      list-style-type: none;
+      line-height: 25px;
+  }
+
+  .container .floor2 .menu span {
+      float: right;
+  }
+
+  .container .floor2 .items {
+      width: 70%;
+  }
+
+  .container .floor2 .items nav {
+      margin: 15px 0px 30px 0px;
+  }
+
+  .container .floor2 .items nav span {
+      opacity: 0.7;
+  }
+
+  .container .floor2 .items .cards {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+  }
+
+  .container .floor2 .items .cards .card {
+      width: 30%;
+      margin-bottom: 50px;
+      padding-left: 20px;
+  }
+
+  .container .floor2 .items .cards .card h2 {
+      color: green;
+      font-size: 20px;
+  }
+
+  .container .floor2 .menu .menu2 .super {
+      font-family: Combo;
+      color: green;
+      font-size: 70px;
+  }
+
+  .container .floor2 .menu .green {
+      color: green;
+      float: none;
+  }
+
+  .container .floor2 .menu .menu2 .status {
+      text-align: center;
+      font-weight: 700;
+  }
+
+  .container .floor2 .menu .menu2 button {
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: green;
+      border: none;
+      color: white;
+      font-size: 15px;
+      margin: 15px 0px;
+  }
+
+  /* ABOUT */
+
+  .container .about {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-family: sans-serif;
+      margin: 100px 0px;
+  }
+
+  .container .about .card {
+      width: 45%;
+      display: flex;
+  }
+
+  .container .about .card img {
+      width: 40%;
+  }
+
+  .container .about .card .info h2 {
+      font-size: 30px;
+      font-weight: 800;
+      text-align: end;
+  }
+
+  .container .about .card .info p {
+      opacity: 0.7;
+      text-align: end;
+  }
+
+  .container .about .card .info button {
+      border: none;
+      width: 120px;
+      height: 30px;
+      color: white;
+      background-color: green;
+      margin-top: 30px;
+      border-radius: 5px;
+  }
+
+  /* FLOOR4  */
+  .container .floor4 {
+      width: 100%;
+      font-family: montserrat;
+  }
+
+  .container .floor4 .floor4item {
+      text-align: center;
+      margin-top: 15px;
+  }
+
+  .container .floor4 .cards {
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .container .floor4 .cards .card {
+      width: 23.5%;
+      line-height: 25px;
+  }
+
+  .container .floor4 .cards .card img {
+      width: 100%;
+  }
+
+  .container .floor4 .cards .card span {
+      color: green;
+      font-weight: 530;
+  }
+
+  /* INFORMATION  */
+
+  .container .floor5 {
+      margin-top: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #F9F9F9;
+      font-family: montserrat;
+  }
+
+  .container .floor5 .card {
+      width: 20%;
+      margin-top: 40px;
+  }
+
+  .container .floor5 .left-side {
+      width: 31%;
+  }
+
+  .container .floor5 .card .img {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-left: 50px;
+  }
+
+  .container .floor5 .card .margin {
+      margin-left: 20px;
+  }
+
+  .container .floor5 .left-side h2,
+  .container .floor5 .left-side input {
+      margin-bottom: 15px;
+  }
+
+  .container .floor5 .left-side input {
+      background-color: #fff;
+      border: none;
+      width: 240px;
+      height: 30px;
+      padding-left: 20px;
+  }
+
+  .container .floor5 .left-side button {
+      width: 100px;
+      height: 30px;
+      background-color: green;
+      border: none;
+      font-weight: 800;
+      color: #fff;
+      border-radius: 0px 10px 10px 0px;
+  }
+
+  /* FLOOR6 */
+  .container .floor6 {
+      font-family: Nova Square;
+      margin: 80px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0px;
+      background-color: #EDF6EE;
+  }
+
+  .container .floor6 .block {
+      display: flex;
+      width: 25%;
+  }
+
+  .container .floor6 .block i {
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+  }
+
+  /* FOOTER */
+
+  .container footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-family: Nunito Sans;
+  }
+
+  .container footer .card {
+      width: 20%;
+  }
+
+  .container footer .card ul li {
+      list-style-type: none;
+      line-height: 30px;
+  }
+
+  .container footer ul h3 {
+      font-weight: 700;
+  }
+
+  .container .center {
+      text-align: center;
+      margin: 30px;
+  }
+
+  .container footer .card40 {
+      width: 30%;
+      line-height: 40px;
+  }
+
+  .container footer .card40 i {
+      border: green solid 1px;
+      color: green;
+      padding: 5px;
+      margin: 0px 5px;
+  }
+
+  /* floor7*/
+  .container .floor7 {
+      width: 100%;
+      padding: 50px 0px;
+      font-family: montserrat;
+  }
+
+  .floor7 .block {
+      width: 100%;
+      display: flex;
+  }
+
+  .floor7 .block .block1 {
+      width: 50%;
+      display: flex;
+  }
+
+  .floor7 .block1 i {
+      margin: 20px 50px 0px 0px;
+  }
+
+  .floor7 .block .block2 {
+      width: 50%;
+      line-height: 23px;
+  }
+
+  .floor7 .block .block2 span {
+      color: black;
+      font-weight: none;
+  }
+
+  .floor7 .block .block2 i {
+      color: yellow;
+  }
+
+  .floor7 .block .block2 .size {
+      list-style: none;
+  }
+
+  .floor7 .block .block2 .size li {
+      display: inline-block;
+      margin: 11px;
+      border: green 2px solid;
+      border-radius: 50%;
+      padding: 5px 5px 5px 7px;
+      width: 35px;
+  }
+
+  .floor7 .block .block2 .colorgreen {
+      margin: 25px 0px;
+  }
+
+  .floor7 .block .block2 p {
+      margin: 10px 0px;
+  }
+
+  .floor7 .block .block2 .buttons {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .floor7 .block .block2 .buttons ul {
+      list-style-type: none;
+  }
+
+  .floor7 .block .block2 .buttons ul li {
+      display: inline-block;
+      margin: 15px;
+  }
+
+  .floor7 .block .block2 .buttons ul li button {
+      border-radius: 50%;
+      border: 2px solid black;
+      width: 25px;
+      height: 25px;
+  }
+
+  .floor7 .block .block2 .buttons i {
+      color: green;
+      border: green 2px solid;
+      border-radius: 50%;
+      padding: 5px;
+  }
+
+  .floor7 .block .block2 .buttons .btn1 {
+      width: 120px;
+      height: 35px;
+      background-color: green;
+      border: none;
+      font-weight: 500;
+      color: #fff;
+      border-radius: 5px;
+  }
+
+  .floor7 .block .block2 .buttons .btn2 {
+      width: 120px;
+      height: 35px;
+      border: 2px solid black;
+      font-weight: 800;
+      color: green;
+      border-radius: 5px;
+  }
+
+  .floor7 .block .block2 .share {
+      list-style-type: none;
+  }
+
+  .floor7 .block .block2 .share li {
+      display: inline-block;
+      margin: 5px;
+  }
+
+  .floor7 .block .block2 .share li i {
+      color: black;
+  }
+
+  /* FLOOR8 */
+  .floor8 {
+      width: 100%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 50px 0px;
+  }
+
+  .floor8 ul {
+      list-style: none;
+  }
+
+  .floor8 ul li {
+      display: inline-block;
+      margin: 15px;
+  }
+
+  /* FLOOR9 */
+  .floor9 {
+      width: 100%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .floor9 .infocard {
+      display: flex;
+      padding: 45px;
+  }
+
+  .floor9 .infocard .card {
+      width: 70%;
+  }
+
+  .floor9 .infocard .card ul li .menubar {
+      width: 100%;
+  }
+
+  .floor9 .infocard .card ul li .menubar li {
+      display: inline-block;
+      margin: 10px 40px;
+  }
+
+  .floor9 .infocard .card ul {
+      list-style-type: none;
+  }
+
+  .floor9 .infocard .card ul .li {
+      width: 100%;
+      display: flex;
+      margin-top: 20px;
+  }
+
+  .floor9 .infocard .card .table {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .floor9 .infocard .card .table li {
+      margin: 0px 33px;
+  }
+
+  .floor9 .infocard .card .table li button {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      margin: 0px 10px;
+      color: white;
+      background-color: green;
+      border: none;
+  }
+
+  .floor9 .infocard .card ul li img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .floor9 .infocard .card ul li .menubar .pro {
+      margin-right: 165px;
+  }
+
+  .floor9 .infocard .loginpage {
+      width: 30%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .floor9 .infocard .loginpage ul {
+      list-style: none;
+  }
+
+  .floor9 .infocard .loginpage ul li {
+      margin: 7px;
+      font-size: 20px;
+  }
+
+  .floor9 .infocard .loginpage label input {
+      width: 220px;
+      height: 40px;
+      padding-left: 20px;
+      border-radius: 5px;
+      border: 1px solid green;
+  }
+
+  .floor9 .infocard .loginpage label button {
+      width: 100px;
+      height: 40px;
+      color: white;
+      background-color: green;
+      border: none;
+      border-radius: 5px;
+  }
+
+  .floor9 .infocard .loginpage .btn2 {
+      width: 100%;
+      height: 35px;
+      border-radius: 5px;
+      border: none;
+      background-color: green;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 10px 0px;
+  }
+
+  .floor9 .infocard .loginpage p {
+      text-align: center;
+  }
+
+  /* FLOOR10 */
+  .floor10 {
+      width: 100%;
+      border: rebeccapurple 2px solid;
+      padding: 50px 0px;
+  }
+
+  .floor10 .bill {
+      margin: 10px 0px;
+  }
+
+  .floor10 .department {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .floor10 .department .infos {
+      width: 60%;
+      display: flex;
+      font-family: sans-serif;
+  }
+
+  .floor10 .department .infos ul {
+      list-style-type: none;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .floor10 .department .infos ul li {
+      width: 80%;
+      margin: 15px 0px;
+  }
+
+  .floor10 .department .infos ul li label input {
+      width: 100%;
+      height: 30px;
+      border-radius: 5px;
+      border: black 1px solid;
+      padding: 0px 10px;
+  }
+
+  .floor10 .department .infos ul li label .area {
+      width: 200px;
+      height: 100px;
+  }
+
+  .floor10 .department .infos ul li label .number {
+      width: 85%;
+  }
+
+
+  .floor10 .department .products {
+      width: 40%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .floor10 .department .products ul {
+      list-style-type: none;
+  }
+
+  .floor10 .department .products ul .li {
+      width: 100%;
+      display: flex;
+      margin-top: 20px;
+  }
+
+  .floor10 .department .products .table {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .floor10 .department .products .table li {
+      margin: 0px 33px;
+      font-size: 14px
+  }
+
+  .floor10 .department .products ul li img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .floor10 .department .products ul .li .colorgreen {
+      font-weight: 800;
+  }
+
+  /* sarvar */
+  .floor10 .department .products .loginpage {
+      width: 90%;
+      padding: 50px 0px;
+      border: red solid 2px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .floor10 .department .products .loginpage ul {
+      list-style: none;
+  }
+
+  .floor10 .department .products .loginpage ul li {
+      margin: 7px;
+      font-size: 20px;
+  }
+
+  .floor10 .department .products .loginpage label input {
+      width: 220px;
+      height: 40px;
+      padding-left: 20px;
+      border-radius: 5px;
+      border: 1px solid green;
+  }
+
+  .floor10 .department .products .loginpage label button {
+      width: 100px;
+      height: 40px;
+      color: white;
+      background-color: green;
+      border: none;
+      border-radius: 5px;
+  }
+
+  .floor10 .department .products .loginpage .btn2 {
+      width: 100%;
+      height: 35px;
+      border-radius: 5px;
+      border: none;
+      background-color: green;
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 10px 0px;
+  }
+
+  .floor10 .department .products .loginpage img{
+    margin-left: 100px;
+    border: red 2px solid;
+  }

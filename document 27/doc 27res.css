@@ -1,0 +1,70 @@
+@media only screen and (max-width:376px) {
+    .container {
+        width: 100%;
+        background-position: center;
+        background-image: url(./images/bg\ with\ shoe\ edited\ in\ photoshop.png);
+    }
+
+    .container nav ul {
+        display: flex;
+    }
+
+    .container nav ul li {
+        font-size: 10px;
+        margin: 10px;
+    }
+
+    .container nav ul .block3 {
+        display: none;
+    }
+
+    .container .logo {
+        display: flex;
+    }
+
+    .container .floor2 {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: 20px;
+    }
+
+    .container .floor2 .card {
+        margin: 0px 20px 0px 0px;
+    }
+
+    .container .floor2 .card .right button {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 10px;
+    }
+
+    .container .floor3 {
+        width: 100%;
+        height: 22vh;
+        margin: 0px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container footer {
+        box-sizing: border-box;
+        width: 100%;
+        height: 30vh;
+        background-color: rgb(8, 26, 8);
+    }
+.container .floor3 .info{
+    padding-top: 20px;
+    font-size: 13px;
+}
+.container .floor3 button{
+    position: relative;
+    top: 10px;
+}
+
+
+
+}

@@ -1,0 +1,243 @@
+@media only screen and (max-width: 376px) {
+
+    .container {
+        width: 100%;
+        padding: 0px;
+        position: relative;
+    }
+
+    .container nav ul,
+    .about-us span,
+    .cards-section .menu ul .none {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .sec1 {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sec1 .card button {
+        margin-top: 50px;
+    }
+
+    /*  STATUS TABLE*/
+    .status-table {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin-top: 30px;
+    }
+
+    .status-table ul {
+        width: 50%;
+        height: 120px;
+        display: block !important;
+        margin: 0px;
+    }
+
+    .status-table li {
+        font-size: 35px;
+        margin: 0px;
+    }
+
+    .status-table ul .small {
+        font-size: 20px;
+    }
+
+    .status-table .assistand {
+        width: 60%;
+    }
+
+    /* /ABOUT ME SECTION */
+    .about-me {
+        width: 100%;
+    }
+
+    .about-me h2 {
+        font-size: 35px;
+    }
+
+    .about-me .about {
+        flex-direction: column;
+        width: 100%;
+        color: rgb(0, 66, 0);
+    }
+
+    .about-me .about button {
+        position: relative;
+        top: -130px;
+        left: 230px;
+    }
+
+    .about-me img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .about-me .about .info {
+        line-height: 20px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-me .about p {
+        padding: 5px;
+    }
+
+    .about-me .brend {
+        width: 100%;
+        display: flex;
+        padding: 5px;
+    }
+
+    .about-me .about .brend img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* CARD SECTION  */
+    .cards-section {
+        width: 100%;
+    }
+
+    .cards-section h1 {
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    .cards-section .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .cards-section .menu label {
+        margin: 0px auto;
+        width: 90%;
+    }
+
+    .cards-section .menu label input {
+        width: 85%;
+    }
+
+    .cards-section .menu ul {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .cards-section .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .cards-section .cards .card h1 {
+        font-size: 15px;
+    }
+
+    .cards-section .cards .cardp {
+        font-size: 5px;
+    }
+
+    .cards-section .cards .card button {
+        margin: 20px;
+        width: 100px;
+        height: 30px;
+        background: linear-gradient(rgb(51, 51, 193), rgb(218, 95, 95), black 25px);
+    }
+
+    .cards-section .cards .card button:active {
+        background: linear-gradient(none);
+        background-color: white;
+        color: blue;
+    }
+
+    .cards-section .cards .card {
+        width: 45%;
+        margin-top: 30px;
+        border-radius: 0px 20px 0px 0px;
+    }
+
+    /* ABOUT-US  SECTION  */
+    .about-us {
+        width: 100%;
+        text-align:center;
+        text-align: center;
+        line-height: 22px;
+        font-weight: 900;
+    }
+    .about-us .star{
+        display: inline-block;
+        margin: 0px auto;
+    }
+
+    .about-us .what-h1, .about-us h3{
+      margin: 0px;
+    }
+    .about-us .what-h1{
+        font-size: 28px;
+    }
+   
+    .about-us .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us .cards .card{
+        width: 100%;
+        margin-bottom: 50px;
+        text-align: start;
+        padding: 0px 5px;
+    }
+    .about-us .cards .card .info{
+        padding: 0px;
+    }
+    .about-us .cards .card h1{
+    font-weight: 900;
+    }
+    /* card dan keyingi hr surilgan */
+    .about-us .cards .jone img{
+     flex-grow: 1;
+    }
+
+footer{
+    border-radius: 0px;
+    padding: 30px 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer ul{
+    /* border: red solid 1px; */
+    width: 50%;
+    padding: 0px 10px;
+}
+footer ul li{
+    font-size: 12px;
+}
+footer ul li:active{
+    color: greenyellow;
+    transition: 1s ;
+}
+footer ul .bolder{
+    font-weight: 900;
+    font-size: 28px;
+    color: cornflowerblue;
+}
+footer ul .bolder:active{
+    color: blue;
+    transition: 1s ;
+}
+
+
+
+
+
+
+}

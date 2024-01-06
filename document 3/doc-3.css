@@ -1,0 +1,107 @@
+.container{
+    width: 100%;
+        height:600px ;
+background-color: #37231f;
+overflow: hidden;
+
+}
+
+.container-navbar-h2{
+width: 100%;
+height: 40px;
+
+}
+
+h1{
+    color: aliceblue;
+    font-size: 20px;
+    margin: 20px 600px 0px 120px ;
+display: inline-block;
+
+}
+
+.container-navbar h2{
+    color: aliceblue;
+    font-size: 15px;
+    margin: 20px 0px 0px 35px;
+vertical-align: middle;
+display:inline-block ;
+}
+
+.wrapper{
+    position: relative;
+
+}
+
+.container-yozuvi{
+
+    width: 520px; 
+    height: 250px;
+    margin: 180px 0px 0px 150px;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+
+.container-yozuvi h1{
+margin: 0px 50px 0px 0px ;
+font-size:40px;
+}
+
+.container-yozuvi .btn1{
+    width:120px ;
+    height: 40px; 
+background-color:#fe974c;
+border: 3px solid #fe974c;
+}
+
+.container-yozuvi .btn2{
+    width: 140px;
+    height: 40px;
+    background-color:#37231f;
+    border: 3px solid #fe974c;
+color: #fe974c;
+}
+
+.container-yozuvi .btn1:hover{
+    background-color:#37231f;
+    color: #fe974c;
+}
+
+.container-yozuvi .btn2:hover{
+background-color: #fe974c;
+color:black;
+}
+
+.icecreamm{
+      width: 330px;
+      height: 450px;
+      background-color: rgb(87, 55, 7);
+     
+}
+
+.wrapper_icecream{
+    width:400px ;
+    height:500px ;
+    position: absolute;
+    top: -100px;
+    right: 10px;
+
+}
+  
+.icecream{
+    color: #fe974c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

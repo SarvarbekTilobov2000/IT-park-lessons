@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Revalia&family=Roboto&family=Roboto+Mono:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+.container {
+    margin: 0px auto;
+    width: 1260px;
+    height: 100vh;
+    background-image: url(./images/bg\ with\ shoe\ edited\ in\ photoshop.png);
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.container footer{
+  width: 376px;
+}
+
+.container nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Montserrat;
+}
+
+.container nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 30px;
+}
+
+.container nav .block3 {
+    margin: 0px 20px;
+}
+
+.container nav ul .block1 {
+    margin: 0px 10px;
+}
+
+.container .floor1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.container .floor1 button {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    float: right;
+    margin: 5px 50px;
+}
+
+.container .floor1 .btn1 {
+    background-color: rgba(255, 255, 255, 0.100);
+}
+
+.container .floor1 .btn2 {
+    background-color: rgba(255, 255, 255, 0.300);
+}
+
+.container .floor1 .btn3 {
+    background-color: rgba(255, 255, 255, 0.500);
+}
+
+.container .floor1 .btn4 {
+    background-color: rgba(255, 255, 255, 0.700);
+}
+
+.container .floor1 .btn5 {
+    background-color: white;
+}
+
+.container .floor2 {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.container .floor2 .card {
+    color: white;
+    float: right;
+    display: flex;
+    margin-right: 100px;
+    color: red;
+}
+
+.container .floor2 .card .right {
+    width: 90%;
+    display: flex;
+    padding: 5px;
+    position: relative;
+}
+
+.container .floor2 .card button {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    position: relative;
+    right: 0px;
+    bottom: 35px;
+}
+
+.container .floor2 .card p {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.container .floor3 {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 55px;
+    padding: 20px;
+}
+
+.container .floor3 img {
+    width: 120px;
+}
+
+.container .floor3 button {
+    width: 150px;
+    height: 40px;
+    border: rgba(255, 255, 255, 0.639) 2px solid;
+    background-color: transparent;
+    margin: 0px;
+    font-weight: 800;
+}
+
+.container .floor3 .btn1 {
+    background-color: white;
+}
+
+.container .floor3 .btn2 {
+    color: white;
+}
+
+.container .floor3 .info{
+    font-family:Roboto;
+}
+.container .floor3 .info h2{
+font-family: roboto mono;
+}

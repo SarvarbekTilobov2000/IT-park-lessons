@@ -1,0 +1,93 @@
+
+*{
+    margin: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#grad1{
+    border: 2px solid black ;
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(red, yellow, green);
+  }
+
+  #grad2{
+    border: 2px solid black ;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(red 100deg, yellow 40deg, green 220deg);
+  }
+
+  #grad3{ 
+    border: 2px solid black ;
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(red, yellow, green, blue, black);
+  }
+
+
+  #grad4{ 
+    border: 2px solid black ;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(red, yellow, green, blue, black);
+  }
+
+  #grad5 {
+    border: 2px solid black ;
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(red 10deg, yellow 150deg, green 200deg, blue 250deg, black 300deg);
+  }
+
+
+  #grad6 {
+    border: 2px solid black ;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(red, yellow, green, blue, black);
+  }
+
+  #grad7{
+    border: 2px solid black ;
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg,white 270deg, blue 270deg);
+
+  }
+  
+  #grad8{
+    border: 2px solid black ;
+    width: 400px;   
+    height: 400px;
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, white 180deg,white 270deg, blue 270deg);
+    border-radius: 50%;
+    border: 2px solid black ;
+  }
+
+  #grad9{
+    
+    width: 400px;   
+    height: 400px;
+    background-image: conic-gradient(white 0deg, white 90deg, yellow 90deg, yellow 180deg, white 180deg,white 270deg, rgb(43, 171, 43) 270deg);
+   
+  }
+
+  #grad10{
+    width: 400px;   
+    height: 400px;
+    background-image: conic-gradient(white 0deg, white 90deg, yellow 90deg, yellow 180deg, white 180deg,white 270deg, blue 270deg);
+    border-radius: 50%;
+  }
