@@ -1377,3 +1377,6 @@ console.log(r);
 // for(let i= 0; i<number.length; i++){
 //     console.log(i);
 // }
+
+
+const res = 20
