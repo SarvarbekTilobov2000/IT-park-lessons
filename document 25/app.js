@@ -12,17 +12,17 @@
 // Math.floor(13/3)
 //)
 
-// var ism = "Abbosbek"; 
+// var ism = "Abbosbek";
 //var ism = "Jo'rabek" // qayta elon qilish
 // ism='New name'  //Qayta qiymatlash
 // console.log(ism);
 
 // let ism = "Samandar";
 // //let ism ="new name"//qayta qiymatlab bo'lmay di
-// ism='New name'// let bilan ishlatilganda qayta qiymatlash 
+// ism='New name'// let bilan ishlatilganda qayta qiymatlash
 // console.log(ism);
 
-// const ism = "Muhammadi";  
+// const ism = "Muhammadi";
 // //const ism='name2'//const ishlaganda ham qayta elon qilib bolmaydi !!!
 // // ism ='name2'// const bilan elon qilinganda qayta qiymatlab bolmaydi !!!
 // console.log(ism);
@@ -294,7 +294,7 @@
 
 // //JUFT YOKI TOQ SON LARNI ANIQLOVCHI  AMALIY ISH                                            ➡️
 // let a = +prompt("enter the number")
-// if (a % 2 == 0) {// bu yerda  kiritilgan data qoldiqli 2 ga bo'linadi  va qoldiq 0 ga teng bolsa juft boladi 
+// if (a % 2 == 0) {// bu yerda  kiritilgan data qoldiqli 2 ga bo'linadi  va qoldiq 0 ga teng bolsa juft boladi
 //                                                              //   aks holda toq boladi
 //     console.log("son juft");
 // }
@@ -334,7 +334,7 @@
 //     alert("kiritilgan raqam toq son")
 // }
 
-// //SXEMA 1                                    
+// //SXEMA 1
 // let x = +prompt("sonni kiriting")
 // console.log(Math.floor(x / 10) + " o`nlar xonasi");
 // console.log(x % 10 + " birlar xonasi");
@@ -343,9 +343,9 @@
 // if (10 <= son && son < 100) {
 //     console.log(Math.floor(son / 10) + " son onlik");
 //     console.log(son % 10 + " birlik xonasi");
-// }                                                                                          ➡️
-// // else if(son>100){//bu shartni kiritish shart emas chunki if blokda 2xonali sonlar orasida 
-// //belgilab berilgan  boshqa sonlarda else blok ishlaydi                                      
+// }                                                                                         // ➡️
+// // else if(son>100){//bu shartni kiritish shart emas chunki if blokda 2xonali sonlar orasida
+// //belgilab berilgan  boshqa sonlarda else blok ishlaydi
 // //     console.log("ikki xonali son kiriting");
 // // }
 // else {
@@ -367,22 +367,28 @@
 //     console.log(uch, tor, besh, olt);
 // }
 // else {
+//
+// }
+
+// let number = +prompt("ikki xonali son kiriting")
+// if (0 < number < 100) {
+//     let on = Math.floor(number / 10)
+//     let br = number % 10
+//     const add = on + br
+//     const subtrack = on - br
+//     const multiplay = on * br
+//     const tobe = on / br
+//     console.log(`O'nliklar xonasi ${on} va birliklar xonasi ${br} Qo'shilganda ${add} ga teng. Ayrilganda ${subtrack} ga bo'linganda ${tobe} ga ko'paytiriganda ${multiplay} ga teng`);
+// }
+// else {
 //     console.log('not found');
 // }
 
-// let soniya = +prompt("soniyani kiriting")
-// let a = soniya / 60;
-// let b = soniya / 3600;
-// console.log("kun boshidan beri " + soniya + " sekund");
-// console.log(Math.floor(a) + " minut o`tdi");
-// console.log(Math.floor(b) + " soat o`tdi");
-// //2 chi usuli
-// // let soniya = +prompt("soniyani kiriting")
-// // let a = Math.floor(soniya / 60);
-// // let b = Math.floor(soniya / 3600);
-// // console.log(`kun boshidan beri ${soniya} sekund`);
-// // console.log(`${a} minut o'tdi`);
-// // console.log(`${b} soat o'tdi`);
+// const num = +prompt("soniyani kiriting")
+// let min = Math.floor((num / 60));
+// const hour = Math.floor(num / 3600);
+// let day = Math.floor(num / 86400)
+// console.log(`${num} soni ${min} minutga, ${hour} soat ga, ${day} sutkaga teng`);
 
 // const nbm = +prompt("brendni kiriting")
 // switch (nbm) {
@@ -391,6 +397,17 @@
 //     default: console.log("not found");
 // }
 
+// let p = prompt("brend");
+// switch (p) {
+//     case "Tesla": console.log("Elon Musk"); break
+//     case "Apple": console.log("Stiv Jobs"); break
+//     case "Micrasoft": console.log("Bill Geyts"); break
+//     default: console.log("not found");
+// }
+
+// //<===================if else ===switch case==============================>
+// //agar bitta narsa ko'p narsalarga taqqoslanayotganda  switch case ishlatish qulay hisoblanadi
+// //agar bittadan kop narsa  kop narsalarga taqqoslanayotgan bollsa if else ishlatish qulay boladi ➡️
 // let hafta = +prompt("nechinchi kun")
 // if (hafta === 1) {
 //     console.log("dushanba");
@@ -412,43 +429,17 @@
 //     console.log("not found");
 // }
 
-let p = prompt("brend");
-switch (p) {
-    case "Tesla": console.log("Elon Musk"); break
-    case "Stiv Jobs": console.log("Apple"); break
-    case "Bill Geyts": console.log("Micrasoft"); break
-    default: console.log("not found");
-}
-
-let respo
-
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//     let a = +prompt("baholarni kiritish paneli");
-// switch (a) {
-//     case a == 5: console.log(` ${a} baho`); break
-//     case a == 4: console.log(` ${a} baho`); break
-//     case a == 3: console.log(` ${a} baho`); break
-//     case a == 2: console.log(` ${a} baho`); break
-//     case a == 1: console.log(` ${a} baho`); break
-//     //  default :console.log("bu kiritilgan son baholash mezonidan tashqari");
-// }
-// console.log(`${a} baho yaxshi`);
-
 // const a = "stringdata";
 // let b = "stringdata";
-
 // a == b ? console.log("xa") : console.log("yoq");
 
-// let a = +prompt("sonni kiriting");
-// let b;
-// switch (a) {
-//     case 50:
-// }
+// const ab = "45"
+// let db = 45
+// ab == db ? console.log("xa") : console.log("yoq");
 
 // let ball = +prompt("natijani bilish");
 // let IELTS = +prompt("IELTS balingiz")
 // let usd = +prompt("moliyaviy mablag`ingiz")
-
 // if (ball >= 150 || IELTS >= 7 && usd >= 5000) {
 //     console.log("oqishga qabul qilindingiz");
 // } else {
@@ -456,23 +447,29 @@ let respo
 // }
 
 // // object  >>>>>>>>>>>>>
-// var inson = {//obyekt elon qilindi va qiymatlari yozildi
-//     ismi: 'sardor',
-//     familiyasi: 'tolibov',
-//     joyi: 'tafakkur',
-//     yoshi: 15,
+// let inson = {//obyekt elon qilindi va qiymatlari yozildi
+//     name: 'sardor',
+//     firstName: 'tolibov',
+//     location: 'tafakkur',
+//     age: 15,
 // }
-// console.log(inson);//obyekt elon qilindi
-// console.log(inson.yoshi);//obyrkt ichidagi qiymat chaqirib olindi   boshqalari ham shu ko'rinish da elon qilinadi
+// console.log(inson);//obyekt chaqirildi
+// console.log(inson.age);//obyekt ichidagi qiymat chaqirib olindi boshqalari ham shu ko'rinish da chaqiriladi
 
-// For
-// javascript tilida >>> FOR loop dan foydalanib malum bir kod bloki ni  bir naecha bor ishga tushurish mumkun
-// umumiy ko`rinishi { boshlangichifoda : tekshiruv sharti : tanasi }
-// BOSHLANGICH IFODA ---o`zgaruvchilarni elon qilish uchun yoziladi  va bir marta ishga tushadi
-// TEKSHIRUV SHARTI berilgan shart tekshirikadi  agar rost bo`lsa berilgan kod blok ishga tushadi  false bo`lsa  for loop tugatiladi
-// IFODANI YANGILASH tekshiruv sharti rost bolgan holda, boshlangich ifoda yangilanadi
+// // For
+// // javascript tilida >>> FOR loop dan foydalanib malum bir kod bloki ni  bir naecha bor ishga tushurish mumkun
+// // umumiy ko`rinishi { boshlangichifoda : tekshiruv sharti : tanasi }
+// // BOSHLANGICH IFODA ---o`zgaruvchilarni elon qilish uchun yoziladi  va bir marta ishga tushadi
+// // TEKSHIRUV SHARTI berilgan shart tekshirikadi  agar rost bo`lsa berilgan kod blok ishga tushadi  false bo`lsa  for loop tugatiladi
+// // IFODANI YANGILASH tekshiruv sharti rost bolgan holda, boshlangich ifoda yangilanadi
+// let sum = 0
+// for (let i = 1; i <= 100; i++) {
+//     console.log(sum);
+//     sum += 10;//sum=sum+i
+// }
+// console.log('sum: ' + sum);
 
-// let n = 1;
+// let n = 1;////While loop➡️
 // while (n <= 20) {
 //     if (n % 2 == 0) {
 //         console.log(n);
@@ -481,117 +478,100 @@ let respo
 // }
 // console.log(a)
 
-// for (acer = 0; acer <= 100; acer++) {
-//     // console.log("salom dunyo");
-//     console.log(acer);
-// }
-
-// let sum = 0
-
-// for (i = 1; i <= 10; i++) {
-//     console.log(sum);
-//     sum += 10;//sum=sum+i
-// }
-// console.log('sum: ' + sum);
-
-// BREAK >>>>>>>>>>>>> statement  yordamida berilgan malum bir shart bajarilgan holatda  loop ni to'xtatish imkoniyati mavjud
-// br dan  besh gacha bolgan  saonlarni console ga chiqaruvchi  loop
-
-// for (let i = 1; i <= 10; i++) {
+// // BREAK >>>>>>>>>>>>> statement  yordamida berilgan malum bir shart bajarilgan holatda  loop ni to'xtatish imkoniyati mavjud
+// // br dan  besh gacha bolgan  saonlarni console ga chiqaruvchi  loop
+// for (let i = 0; i <= 10; i++) {
 //     ///breack condition
-//     if (i === 3) { break }
+//     if (i === 5) { break }
+//     console.log(i);
 // }
-// console.log(i);
+
+// for(let i=0; i<=20; i++){
+//     console.log(i);
+//     if(i==3){break}
+// }
 
 // let n = 1;
-
 // do {
 //     n++
 //     console.log(n);
 
-// } while (n < 10)
-
-// let m = prompt("nomni kiriting");
-// switch (m) {
-//     case "acer": alert("100"); break
-//     case "hp": alert("200"); break
-//     case "lenovo": alert("300"); break
-//     default: alert("not found")
+// let i = 0
+// do {
+//     i++
+//     console.log("while loop");
 // }
+// while (i < 0)
 
-// function myName() {
+// function bcBlack() {
 //     console.log("sarvarbek");
-//     document.body.style.backgroundColor = "#000";
+//     document.body.style.backgroundColor = "#fff";
 // }
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ARREY  va errey metodlari
-// let mehmonlar = [`sardor`, `sarvar`, `diyor`, `temur`]
-// console.log(mehmonlar[1]);//bu yerda  sarvar so'zi consolga chiqadi
-// //chunki js da sanoq son 0 dan boshlanadi    bundan korinadiki sardor=0, sarvar=1, diyor=2, temur=3
-// mehmonlar[0] = "jorabek"; //bunda arrey soni bn chaqirib olinib  boshqa bir qiymatga tenglandi
-// console.log(mehmonlar);
-// let numbers = [12, 54, 5, 5185, 123]
-// //let result=numbers.length //length bu ichidagi elementlar sonini anglatadi
-// console.log(result);
-// let result = mehmonlar.indexOf(`diyor`)//bu yerda indexof metodi ishlatilgan va
-// bu diyor qiymatini ni arrey ichida joylashivi nechinchi ekanligini  aniqlab beradi
-// console.log(result);
-// let result = mehmonlar.concat(numbers) //concat metodi  bu yerda biriktirish manosida va ikki arreyni biriktirib yani birga yozib bermoqda
-// console.log(result);
-// mehmonlar.push('davlatbek') // bu metod tashqaridan element qoshishda ishlatiladi
-// console.log(mehmonlar);
-// mehmonlar.pop("diyor")//bu metod biror qiymatni olib qo'yishda ishlatiladi
-// console.log(mehmonlar);
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//     console.log(mehmonlar);
-// console.log(mehmonlar[2]);
-// const sd = mehmonlar.length
-// console.log(sd);
-// var sar = mehmonlar.indexOf("sarvar")
-// console.log(sar);
-// var ser = mehmonlar.concat(numbers)
-// console.log(ser);
-// mehmonlar.push("senior");
-// console.log(mehmonlar);
 
-// const ism = prompt("Ismingizni kiriting")
-// const yosh = prompt(`Hurmatli ${ism} yoshingizni kiriting`)
-// const yil = 2023 - yosh;
-// const oy = yosh * 12;
-// let hafta = (yosh * 12) * 4;//yoki hafta=(yosh*365)\7
-// let kun = yosh * 365;
-// let soat = yosh * 365 * 24;
-// let minut = yosh * 365 * 24 * 60;
-// let secund = yosh * 365 * 24 * 3600;
-// let result = `Qadrli ${ism} siz ${yil} -yilda tugilgansiz. Siz ${oy} oy,
-//  ${(hafta).toFixed(0)} hafta, ${kun} kun, ${soat} soat ${minut} minut va ${secund} sekund yashagansiz👌😁👌`
-// alert(result);
+// function declaration() {
+//     console.log("function declaration");
+// }
+// const expression = function () {
+//     console.log("function expression");
+// }
+// const arrov = () => {
+//     console.log("arrov function");
+// }
+// declaration()
+// expression()
+// arrov()
 
-// let ism = prompt(`Qidirilayotgan ismni kiriting`)
-// let ismlar = [`yodgor`, `sardor`, `firdavs`, `diyor`]
-// if (ismlar.includes(ism)) {
-//     alert(`Ha ${ism} bor`)
+// //>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ARREY  va errey metodlari
+// let guests = [`sardor`, `sarvar`, `diyor`, `temur`]
+// // console.log(guests[1]);//bu yerda  sarvar so'zi consolga chiqadi
+// // //chunki js da sanoq son 0 dan boshlanadi    bundan korinadiki sardor=0, sarvar=1, diyor=2, temur=3
+// // guests[0] = "jorabek"; //bunda arrey soni bn chaqirib olinib  boshqa bir qiymatga tenglandi➡️
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// // let result = numbers.length //length bu ichidagi elementlar sonini anglatadi➡️
+// //let result = huests.indexOf(`diyor`)//bu yerda indexof metodi ishlatilgan va
+// //bu diyor qiymatini ni arrey ichida joylashivi nechinchi ekanligini  aniqlab beradi➡️
+// // let result = guests.concat(numbers)
+// //concat metodi bu yerda biriktirish manosida va ikki arreyni biriktirib yani bitta arrayga aylantirib yozib bermoqda➡️
+// //numbers.pop()//Massivdan oxirgi elementni olib tashlaydi va uni qaytaradi
+// ////Agar massiv bo'sh bo'lsa, undefined qaytariladi va massiv o'zgartirilmaydi➡️
+// //guests.push("senior");//Massiv oxiriga yangi elementlar qo'shadi va massivning yangi uzunligini qaytaradi.➡️
+
+// const name = prompt("ismingizni kiriting")
+// const age = +prompt(`Qadirli ${name} yoshingizni kiriting`)
+// const born = 2024 - age
+// const month = age * 12
+// const week = month * 4
+// const day = age * 365
+// const hour = day * 24
+// const minute = hour * 60
+// const secunde = minute * 60
+// let res = `Qadrli ${name} siz ${born} -yilda tugilgansiz. Siz ${month} oy,
+//  ${week} hafta, ${day} kun, ${hour} soat ${minute} minut va ${secunde} sekund yashagansiz👌😁👌`
+// console.log(res);
+
+// let name = prompt("ism ni kiriting")
+// let names = ["sarvar", 'firdavs', 'jaxongir', 'temur']
+// if (names.includes(name)) {
+//     alert(`${name} nomli foydalanuvchi bor`)
 // } else {
-//     alert(`Afsuski ${ism} yo'q`)
+//     alert(`afsuski ${name} nomli foydalanuvchi topilmadi`)////Massiv ma'lum bir elementni o'z ichiga oladimi
+//     // yoki yo'qligini aniqlaydi, mos ravishda rost yoki yolg'onni qaytaradi.
 // }
 
-// let ism = prompt(`Qidirilayotgan ismni kiriting`);
-// let ismlar = [`yodgor`, `sardor`, `firdavs`, `diyor`];
-
+// let letter = prompt("ism kiriting:")
+// const arr = [`a`, `b`, `s`, `d`]
 // switch (true) {
-//     case ismlar.includes(ism):
-//         alert(`Ha ${ism} bor`);
-//         break;
-//     default:
-//         alert(`Afsuski ${ism} yo'q`);
+//     case arr.includes(letter): alert(`ha ${letter} bor`); break
+//     default: alert(`afsuski ${letter}  harfi topilmadi`);
 // }
 
 // let ism = [`sardor`, `sarvar`, `diyor`]
 // for (let i = 0; i < ism.length; i++) {
 //     let result = ism[i] + "bek";
-//     // console.log(result);
-//     alert(result)
+//     console.log(result);
 // }
+
 
 // let ism = [`sardor`, `sarvar`, `diyor`]
 // let i = 0;
@@ -733,7 +713,7 @@ let respo
 //     return as
 // }
 // const result = a()
-// console.log(result);
+// // console.log(result);
 
 //             //funcsiyalar hechnarsaga bog'liq bolmagan holda ichlatiladi➡️➡️➡️
 // const a = () => `arrow function`
@@ -748,8 +728,8 @@ let respo
 //     const number = 50;
 //     callback(number)
 // }
-// myfunc(function (value) {
-//     console.log(value);
+// myfunc(function (val) {
+//     console.log(val);
 // })
 
 // const alfa = (chaqiruv) => {
@@ -768,10 +748,19 @@ let respo
 //     console.log(n);
 // })
 
-// const numberseries = +prompt("nechta serial ho'rdingiz", "")         //➡️➡️➡️
+// //====================================================================================================
+// let numberseries;        //➡️➡️➡️
+// function startApp() {
+//     numberseries = +prompt("nechta serial ho'rdingiz", "")
+//     while (numberseries == "" || numberseries == null || isNaN(numberseries)) {
+//         numberseries = +prompt("nechta serial ho'rdingiz", "")
+//     }
+// }
+// startApp()
+
 // const seriesDB = {
-//     count: numberseries,
-//     series: {},
+//     count: numberseries,//bu yerga numberSeries ga kiritilgan qiymat kelib tushadi
+//     series: {},//bo'sh object
 //     actors: [],
 //     genres: false,
 //     private: false,
@@ -780,14 +769,28 @@ let respo
 //     b = prompt("nechi baho berasiz "),
 //     c = prompt("ohirgi korgan serialingiz"),
 //     d = prompt("nechi baho berasiz ");
-// seriesDB.series[a] = b;
-// seriesDB.series[c] = d;
+// seriesDB.series[a] = b;// bu kodda abyekt ga xususiyat berilmoqda yani a= (ohirgi korgan serial) b=(bahosiga) shunda seriesDb ichida  key=[a] and Value=b boladi
+// seriesDB.series[c] = d;//object ga hususiyat berayotganda [] bn beriladdi
 // for (let i = 0; i < 2; i++) {
 //     const a = prompt("ohirgi korgan serialingiz"),
 //         b = prompt("nechi baho berasiz ");
-//     seriesDB.series[a] = b;
+//     if (a != null && b != null && a != "" && b != "") {
+//         seriesDB.series[a] = b;
+//         console.log("done");
+//     }
+//     else {
+//         console.log("error");
+//         i--
+//     }
 // }
+// if (seriesDB.count < 5) {
+//     console.log("Kam serial ko'ribsiz");
+// } else if (5 < seriesDB.count < 10) {
+//     console.log("siz klassik tomoshabin ekansiz");
+// }
+
 // console.log(seriesDB);
+// //====================================================================================================
 
 // const inRange = (min, max, number) => {                                          //➡️➡️➡️
 //     if (number >= min && number <= max) {
@@ -1051,7 +1054,7 @@ let respo
 // });
 // console.log(`Siz yozgan malumot da ${counter} ta a harfi ishtirok etgan ⭐`);
 
-// //BERILGAN ARRAY DAGI MALUMOTNI DA TYPE NI BOSHQA ARRAY ICHIDA KO'RSATIB BERISH>>>>>>>.➡️➡️➡️
+//BERILGAN ARRAY DAGI MALUMOTNI DA TYPE NI BOSHQA ARRAY ICHIDA KO'RSATIB BERISH>>>>>>>.➡️➡️➡️
 // const array = ['Nodira', 20.15, true, ' ', ["I'am array"], null, 145]
 // const result = []
 // array.forEach((element) => {
@@ -1206,7 +1209,7 @@ let respo
 //     card.innerHTML = `<h1>Bu turdagi jins topilmadi</h1>`
 // }
 
-// const card = document.querySelector('.card');//                                    ➡️➡️
+// const card = document.querySelector('.card');//               ➡️➡️
 // let jins = +prompt("Jinsingizni kiriting: ayol=1 / Erkak=2");
 // if (jins == 1) {
 //     card.innerHTML = `<img src="./Без названия (1).jpg" alt="">`
@@ -1271,16 +1274,106 @@ let respo
 //     console.log(result);
 // }
 
+// const selectLang = prompt("Tilni kiriting")
+// const language = {
+//     uz: { Home: "Bosh sahifa", About: "Biz haqimizda" },
+//     en: { Home: "Home", About: "About" }
+// }
+// console.log(language[selectLang]);
+// //Dot nation
+// //Breact nation
 
+// let math = {
+//     add: function (a, b) {
+//         return a + b
+//     },
+//     subtrack: function (a, b) {
+//         return a - b
+//     },
+//     multip: function (a, b) {
+//         return a * b
+//     },
+//     devis: function (a, b) {
+//         return a / b
+//     },
+//     degree: function (a, b) {
+//         return a ** b
+//     }
+// }
+// console.log(math.multip(15, 5));
 
+// //🔯===========Object metod===============🔯
+// const language = {
+//     uz: { Home: "Bosh sahifa", About: "Biz haqimizda" },
+//     en: { Home: "Home", About: "About" },
+//     item3: `itemVal3`,
+//     item4: `itemVal4`
+// }
 
+// const key1 = Object.keys(language)//Xususiyatlari va usullarini o'z ichiga olgan ob'ekt. Bu siz yaratgan ob'ekt yoki mavjud Document Object Model (DOM) ob'ekti bo'lishi mumkin.
+// //Ob'ektning sanab o'tiladigan qator xususiyatlari va usullarining nomlarini qaytaradi➡️
+// const key2 = Object.values(language)
+// //Ob'ektning sanab bo'ladigan xususiyatlarining qiymatlari qatorini qaytaradi➡️
+// const key3 = Object.entries(language)
+// //Ob'ektning sanab bo'ladigan xususiyatlarining kalit/qiymatlari qatorini qaytaradi➡️
+// const key4 = Object.fromEntries(key3)////fromentries parametr qavslari ichiga ozgartirilishi kerak bolgan abyekt yoziladi
+// //Xususiyatlar va usullar uchun kalit-qiymat yozuvlari orqali yaratilgan ob'ektni qaytaradi➡️
 
+// let arr = [`C++`, `django`, `phyton`, `javascript`, `Flutter`]                         ////➡️
+// const arr2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// // const pu = arr.push("C++")
+// //push metodi array ga ohiridan element qo'shishda ishlatiladi
+// // const ushif = arr.unshift("React")//unshift metodi arrayga 1 chi boshdan element qoshishda ishlatiladi
+// // const shif = arr.shift()//boshidan 1 ta item olib tashlaydi
+// // const po = arr.pop()//oxiridan 1 ta item ni olib tashlaydi
+// // const con = arr.concat(arr2)//ikkita arrayni birbiriga qoshib yangi array yaratib beradi
+// // const sli = arr2.slice(1, 5)////Massiv qismining nusxasini qaytaradi. Boshlanish va tugatish uchun massiv oxiridan
+// // // ofsetni ko'rsatish uchun salbiy indeksdan foydalanish mumkin. Masalan, -2 massivning ikkinchidan oxirgi elementiga ishora qiladi.
+// // console.log(`${sli} slice metod`);
+// // console.log(arr2);
+// // const spl = arr2.splice(1, 5);////Massivdan elementlarni olib tashlaydi va agar kerak bo'lsa, ularning o'rniga yangi
+// // //elementlarni qo'shib, o'chirilgan elementlarni qaytaradi.
+// // console.log(`${spl} splice metod`);
+// // console.log(arr2);
+// // const index = arr.indexOf("Friday")////Massivdagi qiymatning birinchi marta paydo bo'lish indeksini qaytaradi yoki
+// // //agar u mavjud bo'lmasa -1 ni qaytaradi.
+// // console.log(index);
+// // let incl = arr.includes("phyton")////Massiv ma'lum bir elementni o'z ichiga oladimi yoki yo'qligini aniqlaydi, mos
+// // // ravishda rost yoki yolg'onni qaytaradi.
+// // console.log(incl);
+// // const join = arr.join(" ")////Belgilangan ajratuvchi qator bilan ajratilgan qatorga massivning barcha elementlarini qo‘shadi.
 
+// const a = "Amazon"
+// const newWord = a.split(``).reverse(``).join(``).toLowerCase()
+// console.log(newWord);
 
+// ternary operator to check the eligibility to vote
+// let age = 15;
+// let result = (age >= 18) ? "You are eligible to vote." : "You are not eligible to vote yet";
+// console.log(result);
 
+// const person = {
+//     name: "sarvar",
+//     surname: "Tilobov",
+//     region: "Qashqadaryo",
+//     age: 15,
+//     job: "developer",
+//     myInfo: function () {
+//         return `SAlom mening ismim ${this.name} familiyam ${this.surname}, men ${this.region} viloyatida yashayman, meing yoshim ${this.age}  da va men 5 yildan buyon ${this.job} bo'lib ishlab kelaman`;
+//     }
+// }
+// const res = person.myInfo();
+// function result() {
+//     console.log(res);
+// }
 
+let number = +prompt("enter the number")
+console.log(number);
+const r = 20;
+console.log(r);
+// let a= number.splite("")
+// console.log(a);
 
-
-
-
-
+// for(let i= 0; i<number.length; i++){
+//     console.log(i);
+// }

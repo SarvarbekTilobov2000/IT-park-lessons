@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/Screenshot 2024-02-04 164118.png" type="image/x-icon">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>Portfolio</title>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets.css">
+
+    <title>Responsive portfolio website - Bedimcode</title>
 </head>
 
 <body>
-    <!--==================== header ====================-->
+    <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
@@ -43,16 +50,20 @@
                 <div class="nav__close" id="nav-close">
                     <i class="ri-close-line"></i>
                 </div>
-
+                <!-- /#nav-close.nav__close -->
             </div>
+            <!-- /#nav-menu.nav__menu -->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-line"></i>
             </div>
+            <!-- /#nav-toggle.nav__toggle -->
         </nav>
+        <!-- /.nav container -->
     </header>
-    <!-- ==========Main========== -->
-    <main>
-        <!-- Home section -->
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content">
@@ -71,20 +82,23 @@
 
                         <a href="#contact" class="button">Let's Talk</a>
                     </div>
-                    <!-- home__data -->
+                    <!-- /.home__data -->
                     <div class="home__social">
                         <a href="https://github.com/" target="_blank" class="home__social-link">
                             <i class="ri-github-line"></i>
                         </a>
-                        <a href="https://dribbble.com/" target="_blank">
+
+                        <a href="https://dribbble.com/" target="_blank" class="home__social-link">
                             <i class="ri-dribbble-line"></i>
                         </a>
-                        <a href="https://www.linkedin.com/" target="_blank">
+
+                        <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
                             <i class="ri-linkedin-line"></i>
                         </a>
                     </div>
-                    <!-- home social -->
+                    <!-- /.home__social -->
                 </div>
+                <!-- /.home__content -->
                 <div class="home__image">
                     <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
                         <mask id="maskBlob" mask-type="alpha">
@@ -123,29 +137,33 @@
                         </defs>
                     </svg>
                 </div>
+                <!-- /.home__image -->
             </div>
+            <!-- /.home__container container grid -->
         </section>
 
-        <!-- About section -->
+        <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
             <div class="about__container container grid">
                 <div class="about__data">
-                    <h3>
+                    <h3 class="section__subtitle">
                         My <span>Intro</span>
                     </h3>
 
-                    <h2>
+                    <h2 class="section__title">
                         About Me
                     </h2>
 
-                    <p>
-                        Frontend developer. I created web pages with UI/UX user interface I have years old of experience
-                        and many clients are happy with the projects carried out.
+                    <p class="about__description">
+                        Frontend developer, I create web pages with
+                        UI / UX user interface, I have years of
+                        experience and many clients are happy with the
+                        projects carried out.
                     </p>
 
                     <a href="#contact" class="button">Contact Me</a>
                 </div>
-                <!-- About data -->
+                <!-- /.about__data -->
 
                 <div class="about__image">
                     <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,16 +201,16 @@
                         </defs>
                     </svg>
                 </div>
-                <!-- about image -->
+                <!-- /.about__image -->
             </div>
         </section>
 
-        <!-- Skills section -->
+        <!--==================== SKILLS ====================-->
         <section class="skills section">
             <div class="skills__container container grid">
                 <div class="skills__data">
                     <h3 class="section__subtitle">
-                        Favourite <span>Skills</span>
+                        Favorite <span>Skills</span>
                     </h3>
 
                     <h2 class="section__title">
@@ -206,29 +224,30 @@
 
                     <a href="#projects" class="button">See Projects</a>
                 </div>
-                <!-- skills data -->
+                <!-- /.skills__data -->
 
                 <div class="skills__content">
                     <ol class="skills__group">
-                        <li class="skills__item">Bootstrap</li>
-                        <li class="skills__item">Figma</li>
-                        <li class="skills__item">Git & GitHub</li>
                         <li class="skills__item">HTML & CSS</li>
-                    </ol>
-                    <ol class="skills__group">
                         <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">Bootstrap</li>
                         <li class="skills__item">React</li>
+                    </ol>
+
+                    <ol class="skills__group" start="5">
+                        <li class="skills__item">Git & GitHub</li>
+                        <li class="skills__item">Figma</li>
                         <li class="skills__item">Sketch</li>
                     </ol>
                 </div>
-                <!-- skills content -->
+                <!-- /.skills__content -->
             </div>
         </section>
 
-        <!-- Services section -->
-        <section class="services container" id="services">
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
             <h3 class="section__subtitle">
-                My <span>Services</span>
+                My <span>Services
             </h3>
 
             <h2 class="section__title">
@@ -237,13 +256,12 @@
 
             <div class="services__container container grid">
                 <article class="services__card">
-                    <i class="ri-pantone-line"></i>
-
+                    <i class="ri-layout-3-line services__icon"></i>
                     <h2 class="services__title">
                         Web Developer
                     </h2>
 
-                    <p>
+                    <p class="services__description">
                         Development of custom web pages.
                         Using current technologies and
                         libraries of the labor field.
@@ -252,7 +270,6 @@
 
                 <article class="services__card">
                     <i class="ri-pantone-line services__icon"></i>
-
                     <h2 class="services__title">
                         UI/UX Designer
                     </h2>
@@ -266,7 +283,6 @@
 
                 <article class="services__card">
                     <i class="ri-pen-nib-line services__icon"></i>
-
                     <h2 class="services__title">
                         Graphic Design
                     </h2>
@@ -280,75 +296,101 @@
             </div>
         </section>
 
-        <!-- projects -->
-        <section class="projects section">
-            <h3 class="section__subtitle">My <span>Jobs</span></h3>
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h3 class="section__subtitle">
+                My <span>Jobs</span>
+            </h3>
 
-            <h2 class="section__title">Recent Projects</h2>
+            <h2 class="section__title">
+                Recent Projects
+            </h2>
 
             <div class="projects__container container grid">
                 <article class="projects__card">
-                    <img src="./images/project-img-1.jpg" alt="">
+                    <img src="./images/project-img-1.jpg" alt="projects image" class="projects__img">
                     <div class="projects__modal">
-                        <span class="projects__subtitle">Web</span>
-                        <h2 class="Projects__title">Language website</h2>
-                        <a href="#" class="projects__button">View demo</a>
+                        <span class="projects__subtitle">
+                            Web
+                        </span>
+                        <h2 class="projects__title">Modern website</h2>
+
+                        <a href="#" class="projects__button">View demo<i class="ri-external-link-line"></i></a>
                     </div>
                 </article>
 
                 <article class="projects__card">
-                    <img src="./images/project-img-2.jpg" alt="">
+                    <img src="./images/project-img-2.jpg" alt="projects image" class="projects__img">
                     <div class="projects__modal">
-                        <span class="projects__subtitle">Web</span>
-                        <h2 class="Projects__title"> Math website</h2>
-                        <a href="#" class="projects__button">View demo</a>
+                        <span class="projects__subtitle">
+                            Web
+                        </span>
+                        <h2 class="projects__title">Modern website</h2>
+
+                        <a href="#" class="projects__button">View demo<i class="ri-external-link-line"></i></a>
                     </div>
                 </article>
 
                 <article class="projects__card">
-                    <img src="./images/project-img-1.jpg" alt="">
+                    <img src="./images/project-img-3.jpg" alt="projects image" class="projects__img">
                     <div class="projects__modal">
-                        <span class="projects__subtitle">Web</span>
-                        <h2 class="Projects__title"> Modern website</h2>
-                        <a href="#" class="projects__button">View demo</a>
+                        <span class="projects__subtitle">
+                            Web
+                        </span>
+                        <h2 class="projects__title">Modern website</h2>
+
+                        <a href="#" class="projects__button">View demo<i class="ri-external-link-line"></i></a>
                     </div>
                 </article>
 
                 <article class="projects__card">
-                    <img src="./images/project-img-4.jpg" alt="">
+                    <img src="./images/project-img-4.jpg" alt="projects image" class="projects__img">
                     <div class="projects__modal">
-                        <span class="projects__subtitle">Web</span>
-                        <h2 class="Projects__title"> History website</h2>
-                        <a href="#" class="projects__button">View demo</a>
+                        <span class="projects__subtitle">
+                            Web
+                        </span>
+                        <h2 class="projects__title">Modern website</h2>
+
+                        <a href="#" class="projects__button">View demo<i class="ri-external-link-line"></i></a>
                     </div>
                 </article>
 
                 <article class="projects__card">
-                    <img src="./images/project-img-5.jpg" alt="">
+                    <img src="./images/project-img-5.jpg" alt="projects image" class="projects__img">
                     <div class="projects__modal">
-                        <span class="projects__subtitle">Web</span>
-                        <h2 class="Projects__title"> Earphone website</h2>
-                        <a href="#" class="projects__button">View demo</a>
+                        <span class="projects__subtitle">
+                            Web
+                        </span>
+                        <h2 class="projects__title">Modern website</h2>
+
+                        <a href="#" class="projects__button">View demo<i class="ri-external-link-line"></i></a>
                     </div>
                 </article>
 
                 <article class="projects__card">
-                    <img src="./images/project-img-6.jpg" alt="">
+                    <img src="./images/project-img-6.jpg" alt="projects image" class="projects__img">
                     <div class="projects__modal">
-                        <span class="projects__subtitle">Web</span>
-                        <h2 class="Projects__title"> Hoco website</h2>
-                        <a href="#" class="projects__button">View demo</a>
+                        <span class="projects__subtitle">
+                            Web
+                        </span>
+                        <h2 class="projects__title">Modern website</h2>
+
+                        <a href="#" class="projects__button">View demo<i class="ri-external-link-line"></i></a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- contact section -->
+        <!--==================== CONTACT ====================-->
         <section class="contact section" id="contact">
-            <h3>Get <span>Touch</span></h3>
+            <h3 class="section__subtitle">
+                Get In <span>Touch</span>
+            </h3>
+
             <h2 class="section__title">Contact Me</h2>
+
             <div class="contact__container container grid">
-                <form action="" class="contact__from" id="contact__from">
+                <form action="" class="contact__form" id="contact-form">
                     <div class="contact__group">
                         <input type="text" name="user_name" required placeholder="Enter your name"
                             class="contact__input">
@@ -356,7 +398,7 @@
                             class="contact__input">
                     </div>
 
-                    <textarea class="contact__input" name="User_project" required
+                    <textarea class="contact__input" name="user_project" required
                         placeholder="Enter your message"></textarea>
 
                     <p class="contact__message" id="contact-message"></p>
@@ -366,7 +408,8 @@
             </div>
         </section>
     </main>
-    <!--============= footer============ -->
+
+    <!--==================== FOOTER ====================-->
     <footer class="footer">
         <div class="footer__container container grid">
             <div>
@@ -375,16 +418,19 @@
             </div>
 
             <div class="footer__social">
-                <a class="footer__social-link" target="_blank" href="https://www.facebook.com/">
+                <a target="_blank" href="https://www.facebook.com/" class="footer__social-link">
                     <i class="ri-facebook-circle-line"></i>
                 </a>
-                <a class="footer__social-link" target="_blank" href="https://www.instagram.com/">
+
+                <a target="_blank" href="https://www.instagram.com/" class="footer__social-link">
                     <i class="ri-instagram-line"></i>
                 </a>
-                <a class="footer__social-link" target="_blank" href="https://twitter.com/">
+
+                <a target="_blank" href="https://twitter.com/" class="footer__social-link">
                     <i class="ri-twitter-line"></i>
                 </a>
             </div>
+            <!-- /.footer__social -->
 
             <span class="footer__copy">
                 &#169; Copyright Praysz. All rights reserved
@@ -392,7 +438,19 @@
         </div>
     </footer>
 
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./main.js"></script>
 </body>
 
 </html>
