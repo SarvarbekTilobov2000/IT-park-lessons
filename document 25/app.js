@@ -1367,16 +1367,21 @@
 //     console.log(res);
 // }
 
-let number = +prompt("enter the number")
-console.log(number);
-const r = 20;
-console.log(r);
-// let a= number.splite("")
-// console.log(a);
-
-// for(let i= 0; i<number.length; i++){
-//     console.log(i);
-// }
+const input = document.querySelector("input")
+const btn = document.querySelector(".btn")
+function setInput() {
+    input.setAttribute("type", "password")
+}
+function setInput2() {
+    input.setAttribute("type", "text")
+}
 
 
-const res = 20
+let call = () => {
+    return "sarvar"
+}
+let data = (p1) => {
+    return `my name is ${p1}`
+}
+console.log(data(call()));
+
