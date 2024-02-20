@@ -1,4 +1,5 @@
 "use strict"
+
 // document.write("hello world");
 // document.write("developer")
 // const db = ('<h1>senior developer</h1>')
@@ -1154,14 +1155,6 @@
 // const LG = document.querySelector('')                         //So'rov yordamida tanlab olish
 // console.log(LG);
 
-// const name = 'the first senior developer'//bu string metodi hisoblanadi va qavs ichida qaysi index dan boshlab
-// // console.log(name.substring(0,10))                        // olib qaysi indexdagi item gacha olishi yoziladi
-// // console.log(name.split (''));//berilgan elementni array ga aylantirib beruvchi property
-// // //bu propertyda qaysi elementdan keyin arrayga ajratishini qavs ichiga belgilab korsatiladi
-// // //misol uchun : probeldan kegin and verguldan keyin and va qaysidir harfdan kegn deb korsatilsa
-// // //osha korsatlgan harfni console ga chiqarilmaydi
-// console.log(name.toLocaleUpperCase()); //HAmma harfrlarni katta harf bilan
-
 // const arr = ['item1', 'item2', 'item3']
 // // arr.unshift('add')  // arrayga elementni boshidan boshlab qoshish   ➡️➡️
 // arr.pop()//arraydagi element ni olib tashlash➡️➡️
@@ -1310,6 +1303,15 @@
 //     item4: `itemVal4`
 // }
 
+// const name = 'the first senior developer'//bu string metodi hisoblanadi va qavs ichida qaysi index dan boshlab
+// console.log(name.substring(0,10))                        // olib qaysi indexdagi item gacha olishi yoziladi
+// console.log(name.split (''));//berilgan elementni array ga aylantirib beruvchi property
+// //bu propertyda qaysi elementdan keyin arrayga ajratishini qavs ichiga belgilab korsatiladi
+// //misol uchun : probeldan kegin and verguldan keyin and va qaysidir harfdan kegn deb korsatilsa
+// //osha korsatlgan harfni console ga chiqarilmaydi
+// console.log(name.toLocaleUpperCase()); //HAmma harfrlarni katta harf bilan
+
+
 // const key1 = Object.keys(language)//Xususiyatlari va usullarini o'z ichiga olgan ob'ekt. Bu siz yaratgan ob'ekt yoki mavjud Document Object Model (DOM) ob'ekti bo'lishi mumkin.
 // //Ob'ektning sanab o'tiladigan qator xususiyatlari va usullarining nomlarini qaytaradi➡️
 // const key2 = Object.values(language)
@@ -1339,21 +1341,17 @@
 // // //agar u mavjud bo'lmasa -1 ni qaytaradi.
 // // console.log(index);
 // // let incl = arr.includes("phyton")////Massiv ma'lum bir elementni o'z ichiga oladimi yoki yo'qligini aniqlaydi, mos
-// // // ravishda rost yoki yolg'onni qaytaradi.
-// // console.log(incl);
+// // // ravishda true or false qiymat qaytaradi.
 // // const join = arr.join(" ")////Belgilangan ajratuvchi qator bilan ajratilgan qatorga massivning barcha elementlarini qo‘shadi.
+// // const a = "Salom Amazon"
+// // const newWord = a.split(``).reverse(``).join(``).toUpperCase()
 
-// const a = "Amazon"
-// const newWord = a.split(``).reverse(``).join(``).toLowerCase()
-// console.log(newWord);
-
-// ternary operator to check the eligibility to vote
+// ovoz berish huquqini tekshirish uchun uchlik operator
 // let age = 15;
 // let result = (age >= 18) ? "You are eligible to vote." : "You are not eligible to vote yet";
-// console.log(result);
 
 // const person = {
-//     name: "sarvar",
+//     name: "sarvar",/
 //     surname: "Tilobov",
 //     region: "Qashqadaryo",
 //     age: 15,
@@ -1367,21 +1365,95 @@
 //     console.log(res);
 // }
 
-const input = document.querySelector("input")
-const btn = document.querySelector(".btn")
-function setInput() {
-    input.setAttribute("type", "password")
-}
-function setInput2() {
-    input.setAttribute("type", "text")
-}
+// const names = ["sarvar", "farxod", "jonbek"]
+// names.forEach(function (name) {
+//     const newIsm = name.charAt()
+//     // .toUpperCase() + name.slice(1)
+//     console.log(newIsm);
+// })
+
+// const input = document.querySelector("input")
+// function hide() {
+//     input.setAttribute("type", "password")
+// }
+// function show() {
+//     input.setAttribute("type", "text")
+// }
+
+// const photo = document.querySelectorAll('.cover')
+// photo[0].dataset.type = "photo";
+// photo[1].dataset.type = "photo"
+// photo[2].dataset.type = "tech"
+// photo[3].dataset.type = "tech"
+// photo[4].dataset.type = "music"
+// photo[5].dataset.type = "music"
+// photo[6].dataset.type = "art"
+// photo[7].dataset.type = "art"
+
+// const content = document.querySelector(".text");
+// // content.style.color = "red";
+// // content.style.backgroundColor = "green";
+// // content.style.fontWeight= "600"
+// // content.style.cssText = "color:red; background-color:green; font-weight:600"
+// const input = document.querySelector("input");
+// function show() {
+//     return input.setAttribute("type", "text")
+// }
+// function hide() {
+//     return input.setAttribute("type", "password")
+// }
+
+// {
+//answer================================================
+// let change = function () {
+//     const m = document.querySelector(".text")
+//     m.textContent = "new heading"
+//     m.setAttribute("class", "nClass");
+//     console.log(m.getAttribute("class"));
+// }
+// function fnc2() {
+//     let newM = document.querySelector(".ch")
+//     return newM.textContent = "ozgarish"
+// }
+
+// answer ================================================
+// let jm = ["Amazon", "Google", "Nik","result"]//=======================
+// for (let i = 0; i < jm.length; i++) {
+//     console.log((jm[i].charAt(5)));
+// }
+
+//answer=====================
+// const a = [1, 2, 3]
+// const b = ["s", "b", "v"]
+// console.log(...a, ...b);
+// }
+
+// let official = document.querySelector(".text")
+// let btn = document.querySelector("button")
+// const textChange = () => {
+//     official.textContent = "done successfully "
+// }
+// function colorChange() {
+//     official.style.cssText = `color:red`
+// }
+// btn.addEventListener("click", colorChange)
+// btn.addEventListener('click', textChange)
+
+const str = " string method "
+const num = [1, 2, 3]
+
+console.log(str.trim())
 
 
-let call = () => {
-    return "sarvar"
-}
-let data = (p1) => {
-    return `my name is ${p1}`
-}
-console.log(data(call()));
+
+
+
+
+
+
+
+
+
+
+
 
