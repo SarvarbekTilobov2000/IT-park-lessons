@@ -1439,10 +1439,6 @@
 // btn.addEventListener("click", colorChange)
 // btn.addEventListener('click', textChange)
 
-const str = " string method "
-const num = [1, 2, 3]
-
-console.log(str.trim())
 
 
 
