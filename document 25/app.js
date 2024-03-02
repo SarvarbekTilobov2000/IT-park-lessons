@@ -1510,7 +1510,11 @@
 // // //   console.log(b[i]);
 // // //}
 
-const a = document.querySelector("article")
-
-
+const button = document.querySelectorAll("button")
+const a = document.querySelectorAll("li")
+a.forEach((i) => {
+    i.addEventListener("click", (e) => {
+        e.button.style.cssText = "text-decoration:line-through; opacity:0.5";
+    })
+})
 
