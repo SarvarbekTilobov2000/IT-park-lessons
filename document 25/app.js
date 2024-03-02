@@ -1311,7 +1311,6 @@
 // //osha korsatlgan harfni console ga chiqarilmaydi
 // console.log(name.toLocaleUpperCase()); //HAmma harfrlarni katta harf bilan
 
-
 // const key1 = Object.keys(language)//Xususiyatlari va usullarini o'z ichiga olgan ob'ekt. Bu siz yaratgan ob'ekt yoki mavjud Document Object Model (DOM) ob'ekti bo'lishi mumkin.
 // //Ob'ektning sanab o'tiladigan qator xususiyatlari va usullarining nomlarini qaytaradi➡️
 // const key2 = Object.values(language)
@@ -1380,16 +1379,6 @@
 //     input.setAttribute("type", "text")
 // }
 
-// const photo = document.querySelectorAll('.cover')
-// photo[0].dataset.type = "photo";
-// photo[1].dataset.type = "photo"
-// photo[2].dataset.type = "tech"
-// photo[3].dataset.type = "tech"
-// photo[4].dataset.type = "music"
-// photo[5].dataset.type = "music"
-// photo[6].dataset.type = "art"
-// photo[7].dataset.type = "art"
-
 // const content = document.querySelector(".text");
 // // content.style.color = "red";
 // // content.style.backgroundColor = "green";
@@ -1401,6 +1390,20 @@
 // }
 // function hide() {
 //     return input.setAttribute("type", "password")
+// }
+
+// let jm = ["Amazon", "Google", "Nik", "result"]//=======================
+// for (let i = 0; i < jm.length; i++) {
+//     const ress = (jm[i].charAt(5));
+//     if (ress) {
+//         console.log(ress);
+//     }
+//     else if (ress == "") {
+//         // console.log("err");
+//     }
+//     else {
+//         console.log("else block worked");
+//     }
 // }
 
 // {
@@ -1416,12 +1419,7 @@
 //     return newM.textContent = "ozgarish"
 // }
 
-// answer ================================================
-// let jm = ["Amazon", "Google", "Nik","result"]//=======================
-// for (let i = 0; i < jm.length; i++) {
-//     console.log((jm[i].charAt(5)));
-// }
-
+// if()
 //answer=====================
 // const a = [1, 2, 3]
 // const b = ["s", "b", "v"]
@@ -1439,17 +1437,79 @@
 // btn.addEventListener("click", colorChange)
 // btn.addEventListener('click', textChange)
 
+// let btn = document.querySelector(".btn")
+// const t = document.querySelector(".text")
+// function changeStyle() {
+//     t.style.cssText = "background-color:green"
+// }
+// btn.addEventListener("click", changeStyle)
 
+// //=============================================================================================================
+// const dataBase = [
+//     { link: "https://static.500px.com/equipments/camera-1501.jpg", type: "apple", price: 1000, id: 1 },
+//     { link: "https://static.500px.com/equipments/camera-1499.jpg", type: "apple", price: 1000, id: 2 },
+//     { link: "https://static.500px.com/equipments/camera-1337.jpg", type: "samsung", price: 1500, id: 3 },
+//     { link: "https://static.500px.com/equipments/camera-1383.jpg", type: "samsung", price: 1500, id: 4 },
+//     { link: "https://assets.asaxiy.uz/product/items/desktop/45fbc6d3e05ebd93369ce542e8f2322d20221215170027675293eIQ1hgOls.png.webp", type: "huawei", price: 2000, id: 5 },
+//     { link: "https://assets.asaxiy.uz/product/items/desktop/2e4fb1ddb61e8e45740ed0415f2b28b02023080216475836093BPxc0JpPBr.png.webp", type: "huawei", price: 2000, id: 6 },
+//     { link: "https://cdn.nguyenkimmall.com/images/thumbnails/382/382/detailed/866/10055096-dien-thoai-xiaomi-redmi-12c-4gb-64gb-xanh-duong-1.jpg", type: "redmi", price: 5000, id: 7 },
+//     { link: "https://angkormeas.com/wp-content/uploads/2023/12/NA_Redmi12c-300x300.jpg", type: "redmi", price: 5000, id: 8 },
+//     { link: "https://i.pinimg.com/474x/c8/78/70/c878701d84b33538797f70261543019f.jpg", type: "techno", price: 1100, id: 9 },
+//     { link: "https://public.carlcare.com/public/fd683975fbea7dceb19f7407a6e7937a.jpg", type: "techno", price: 1100, id: 10 },
+// ]
+// const box = document.querySelector(".item")//box element tanlab olish
+// const select = document.querySelector(".select")//select element ni tanlab olish
+// const newArr = [] //yangi array. bu yerga addfunc ichidagi if block dan qiymatlar kelib tushadi
+// const addFunc = (data) => {//asosiy function
+//     let image = document.createElement("img");//rasm element yaratish
+//     image.setAttribute("src", data.link);//yaratilgan element ga src atribute qo'shish
+//     image.setAttribute("alt", data.id);//itemga alt atribute qo'shish
+//     image.dataset.type = data.type;
+//     image.style.cssText = "width:300px; height:300px; border-radius:10px; margin:20px";//img ga style berish
+//     let optionItem = document.createElement("option");//har bir iteratsiyada option item yaratilmoqda
+//     if (!newArr.includes(data.type)) {//bu line da newArr ichida data.type bor yoqligi tekshiriladi ! belgisi borligi uchun false qiymatni true ga aylantirib beradi
+//         newArr.push(data.type)//birinchi iteratsiyada false chiqadi va newArr ga o'sha qiymatni yuboradi ikkinchi iteratsiyada true qaytadi,va ! belgi borligi uchun ikkinchi (sinonim)word ni qoshib yubormaydi
+//         select.append(optionItem); //select ni ichiga qo'shilmoqda optionItem                                                                ⬆️natijada sinonim sozlar 2tadan takrorlanib chiqmaydi
+//     }
+//     optionItem.textContent = data.type;//option itemga object type tenglash
+//     box.append(image); //box itemga image ni  qo'shish
+// };
+// for (let i = 0; i < dataBase.length; i++) {//asosiy iteratsiya
+//     addFunc(dataBase[i])//iteratsiyada asosiy funcsiya chaqirilib argumentiga object ning i chisi berib yuborish
+// }
+// //=============================================================================================================
 
+// const para = document.querySelectorAll("p")
+// para.forEach((text) => {
+//   if(text.textContent.includes("succes")){////bu lineda harbir iteratsiyada kelgan element tekshiriladi
+//     text.classList.add("succes")                  //// if contenttida succes bolsa shu nomli klass qoshib qoyiladi
+//   }
+//   if(text.textContent.includes("error")){////bu line da esa error ga tekshirilmoqda
+//     text.classList.add("error")
+//   }
+// })
 
+// const content = document.querySelector("p")
+// console.log(content.classList.add("succes"));////bu line da tanlab olingan itemga succes clasi qoshildi
+// content.classList.add("error")////bu lineda arror qo'shildi
+// console.log(content.classList.remove("error"));////bu line da error olib tashlandi
 
+// let btn = document.querySelector("btn")
+// btn = addEventListener("click", function (a) {
+//     console.log(a.target);
+// })
 
+// const a = document.querySelector("article")
+// // //const b = a.children;//bu yerda html collection  qaytadi va bunda foreach ishlamaydi
+// // // Array.from(a.children).forEach((child) => {//Array.from() colleksiyani arrayga ozgartiradi va forEach ishlaydi
+// // //     child.classList.add("article-child")//arrayning har bir itemi uchun classList orqali
+// // //     console.log(child);
+// // // });
+// // //for (let i = 0; i < b.length; i++) {
+// // //  b[i].classList.add("newClass")
+// // //   console.log(b[i]);
+// // //}
 
-
-
-
-
-
-
+const a = document.querySelector("article")
 
 
