@@ -14,6 +14,13 @@
      background-color: black;
  }
 
+ .y {
+     display: none;
+ }
+ .b{
+display: block;
+ }
+
  .btnStyle {
      width: 15rem;
      padding: 10px;
@@ -23,7 +30,6 @@
  }
 
  .card1 {
-     display: none;
      width: 20rem;
      height: 25rem;
      border-radius: 10px;
@@ -54,9 +60,9 @@
  }
 
  .card2 {
-     display: none;
      padding: 2rem 5rem;
      background-color: rgba(0, 0, 0, 0.153);
+     border: rgba(255, 255, 255, 0.217) 2px solid;
  }
 
  /* .wrapper {

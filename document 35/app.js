@@ -111,26 +111,51 @@
 //     },
 // ],
 
-const card2 = document.querySelector(".card2")
-const btn2 = document.querySelector(".btn2")
-const i = document.querySelector(".fa-x")
+// const container = document.querySelector('.container')
+// const btn1 = document.querySelector('.btn1')
+// const card1 = document.querySelector(".card1")
+// const card2 = document.querySelector(".card2")
+// const i = document.querySelector(".fa-x")
+// const btn2 = document.querySelector(".btn2")
+// btn1.addEventListener("click", function () {
+//     card.style.cssText = "display: block"
+//     btn1.style.cssText = "display:none"
+//     container.style.cssText = "background-color:black"
+// })
+// i.addEventListener("click", function () {
+//     card.style.cssText = "display: none"
+//     container.style.cssText = "background-color:white"
+//     card2.style.cssText = "display:block"
+// })
+// btn2.addEventListener("click", function () {
+//     card.style.cssText = "display: none"
+//     container.style.cssText = "background-color:white"
+//     card2.style.cssText = "display:block"
+// })
 const container = document.querySelector('.container')
-const card = document.querySelector(".card")
+const name = document.querySelector('.name')
+const number = document.querySelector('.number')
 const btn1 = document.querySelector('.btn1')
-i.addEventListener("click", function () {
-    card.style.cssText = "display: none"
-    container.style.cssText = "background-color:white"
-    card2.style.cssText = "display:block"
-})
+const card1 = document.querySelector(".card1")
+const card2 = document.querySelector(".card2")
+const i = document.querySelector(".fa-x")
+const btn2 = document.querySelector(".btn2")
 btn1.addEventListener("click", function () {
-    card.style.cssText = "display: block"
-    btn1.style.cssText = "display:none"
-    container.style.cssText = "background-color:black"
+    card1.classList.replace("y", "b")
+    btn1.classList.add("y")
 })
-btn2.addEventListener("click", function () {
-    card.style.cssText = "display: none"
-    container.style.cssText = "background-color:white"
-    card2.style.cssText = "display:block"
+i.addEventListener("click", function () {
+    btn1.classList.remove('y')
+    card1.classList.replace("b", 'y')
 })
+if (!number == "") {
+    btn2.addEventListener("click", function () {
+        card1.classList.replace('b', 'y')
+        card2.classList.replace('y', 'b')
+    })
+}
+else{
+    console.log('else worked');
+}
 
 
