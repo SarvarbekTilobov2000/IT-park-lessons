@@ -18,12 +18,18 @@
   font-family: monospace;
 }
 
-ul li{
+ul li {
   margin: 2rem;
   padding: 1rem 5rem;
-  background-color:blueviolet;
+  background-color: blueviolet;
   list-style-type: none;
 }
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: blue;
+}
+
 /* span{
   color: blue;
 }
@@ -64,5 +70,3 @@ td:last-of-type {
 tbody > tr:nth-of-type(even) {
   background-color: rgb(237 238 242);
 } */
-
-

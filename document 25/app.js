@@ -1510,15 +1510,29 @@
 // // //   console.log(b[i]);
 // // //}
 
-const button = document.querySelectorAll("button")
-const a = document.querySelectorAll("li")
-a.forEach((i) => {
+//=============akhror web  50 -dars=====================
+const li = document.querySelectorAll("li")
+const ul = document.querySelector("ul")
+const button = document.querySelector("button")
+button.addEventListener("click", (e) => {
+    // ul.innerHTML += "<li>Create item</li>"
+    const c = document.createElement('li')
+    c.textContent = "new item"
+    // c.addEventListener("click", (i) => {
+    //     i.target.remove()
+    // })
+    ul.prepend(c)
+})
+li.forEach((i) => {
     i.addEventListener("click", (e) => {
-        e.button.style.cssText = "text-decoration:line-through; opacity:0.5";
+        // e.target.style.cssText = "text-decoration:line-through; opacity:0.5";
+        // e.target.remove()
+        // e.stopPropagation()
     })
 })
-
-
-
-
-
+ul.addEventListener("click", function (e) {
+    // if (e.target.tagName == 'LI') {
+       // e.target.remove()    
+    // }
+    // console.log(e.target.tagName);
+})

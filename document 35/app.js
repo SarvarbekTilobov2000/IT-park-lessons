@@ -111,26 +111,26 @@
 //     },
 // ],
 
-// const card2 = document.querySelector(".card2")
-// const btn2 = document.querySelector(".btn2")
-// const i = document.querySelector(".fa-x")
-// const container = document.querySelector('.container')
-// const card = document.querySelector(".card")
-// const btn1 = document.querySelector('.btn1')
-// i.addEventListener("click", function () {
-//     card.style.cssText = "display: none"
-//     container.style.cssText = "background-color:white"
-//     card2.style.cssText = "display:block"
-// })
-// btn1.addEventListener("click", function () {
-//     card.style.cssText = "display: block"
-//     btn1.style.cssText = "display:none"
-//     container.style.cssText = "background-color:black"
-// })
-// btn2.addEventListener("click", function () {
-//     card.style.cssText = "display: none"
-//     container.style.cssText = "background-color:white"
-//     card2.style.cssText = "display:block"
-// })
+const card2 = document.querySelector(".card2")
+const btn2 = document.querySelector(".btn2")
+const i = document.querySelector(".fa-x")
+const container = document.querySelector('.container')
+const card = document.querySelector(".card")
+const btn1 = document.querySelector('.btn1')
+i.addEventListener("click", function () {
+    card.style.cssText = "display: none"
+    container.style.cssText = "background-color:white"
+    card2.style.cssText = "display:block"
+})
+btn1.addEventListener("click", function () {
+    card.style.cssText = "display: block"
+    btn1.style.cssText = "display:none"
+    container.style.cssText = "background-color:black"
+})
+btn2.addEventListener("click", function () {
+    card.style.cssText = "display: none"
+    container.style.cssText = "background-color:white"
+    card2.style.cssText = "display:block"
+})
 
 
