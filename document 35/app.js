@@ -133,29 +133,23 @@
 //     card2.style.cssText = "display:block"
 // })
 const container = document.querySelector('.container')
-const name = document.querySelector('.name')
-const number = document.querySelector('.number')
+let input = document.querySelectorAll('.input')
 const btn1 = document.querySelector('.btn1')
 const card1 = document.querySelector(".card1")
 const card2 = document.querySelector(".card2")
 const i = document.querySelector(".fa-x")
 const btn2 = document.querySelector(".btn2")
 btn1.addEventListener("click", function () {
-    card1.classList.replace("y", "b")
-    btn1.classList.add("y")
+    card1.classList.replace("hidden", "visible")
+    btn1.classList.add("hidden")
 })
 i.addEventListener("click", function () {
-    btn1.classList.remove('y')
-    card1.classList.replace("b", 'y')
+    btn1.classList.remove('hidden')
+    card1.classList.replace("visible", 'hidden')
 })
-if (!number == "") {
-    btn2.addEventListener("click", function () {
-        card1.classList.replace('b', 'y')
-        card2.classList.replace('y', 'b')
-    })
-}
-else{
-    console.log('else worked');
-}
+btn2.addEventListener("click", function () {
+    card1.classList.replace('visible', 'hidden')
+    card2.classList.replace('hidden', 'visible')
+})
 
 

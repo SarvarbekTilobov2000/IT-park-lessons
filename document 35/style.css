@@ -14,10 +14,10 @@
      background-color: black;
  }
 
- .y {
+ .hidden {
      display: none;
  }
- .b{
+ .visible{
 display: block;
  }
 
