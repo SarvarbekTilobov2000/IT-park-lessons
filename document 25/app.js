@@ -1537,41 +1537,13 @@
 //     // console.log(e.target.tagName);
 // })
 
-// // ==============mouse codes =======================
-// let mouse = document.querySelector('.mouse')
-// window.addEventListener("mousemove", (e) => {
-//     const x = e.clientX
-//     const y = e.clientY
-//     mouse.style.cssText = `transform:translate(${x}px, ${y}px)`
-// })// ==============mouse codes =======================
-
-// const input = document.querySelector(".input")
-// if (input.length == 8) {
-//     input.style.cssText = 'border:green 4px solid'
-// }
-// else {
-//     console.log('else worked');
-// }
-
-
-// const input = document.querySelector(".input");
-
-// if (!input.value.length == "") {
-//     input.style.border = '4px solid green';
-// } else {
-//     console.log('else ishlayapti');
-// }
-// console.log(input.value.length);
-
-// const input = document.querySelector(".input");
-// if (input.value.length !== 0) {
-//     input.style.border = '4px solid green';
-// } else {
-//     console.log('else ishlayapti');
-// }
-// console.log(input.value.length);
-
-
+// ==============mouse codes =======================
+let mouse = document.querySelector('.mouse')
+window.addEventListener("mousemove", (e) => {
+    const x = e.clientX
+    const y = e.clientY
+    mouse.style.cssText = `transform:translate(${x}px, ${y}px)`
+})// ==============mouse codes =======================
 
 document.addEventListener("DOMContentLoaded", function () {
     var button = document.getElementById("myButton");
@@ -1588,7 +1560,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    
+
+
+
+
+
+
+
 
 
 

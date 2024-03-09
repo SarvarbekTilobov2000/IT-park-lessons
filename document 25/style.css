@@ -8,17 +8,18 @@
   background-color: black;
   width: 100%;
   min-height: 100vh;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  /* text-align: center;
   padding-top: 50px;
   color: white; */
   /* font-size: 50px; */
   font-family: monospace;
 }
+
 /* ================mouse styles=============== */
-.mouse{
+/* .mouse {
   display: inline-block;
   position: relative;
   width: 34px;
@@ -33,7 +34,8 @@
   top: -15px;
   z-index: 100;
 }
-.mouse span{
+
+.mouse span {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -41,14 +43,16 @@
   border-radius: 50%;
   transition: all .4s ease;
 }
-.mouse:active span{
+
+.mouse:active span {
   width: 25px;
   height: 25px;
   background-color: goldenrod;
-}
-/* ================mouse styles=============== */
+} */
 
-/* ul li {
+/* ================mouse styles=============== */
+/* 
+ul li {
   margin: 2rem;
   padding: 1rem 5rem;
   background-color: blueviolet;
@@ -67,9 +71,9 @@ button {
   margin-bottom: 50px;
 } */
 
-/* table {
+table {
   background-color: white;
-  border-collapse:collapse;
+  /* border-collapse: collapse; */
   border: 2px solid rgb(140 140 140);
   font-family: sans-serif;
   font-size: 0.8rem;
@@ -80,6 +84,7 @@ caption {
   caption-side: bottom;
   padding: 10px;
   font-weight: bold;
+  color: white;
 }
 
 thead,
@@ -97,6 +102,8 @@ td:last-of-type {
   text-align: center;
 }
 
-tbody > tr:nth-of-type(even) {
+tbody>tr:nth-of-type(even) {
   background-color: rgb(237 238 242);
-} */
+  text-align: end;
+}
+
