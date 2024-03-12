@@ -1537,6 +1537,28 @@
 //     // console.log(e.target.tagName);
 // })
 
+// //=============== variable page=====================
+// const container = document.querySelector('.container')
+// let input = document.querySelectorAll('.input')
+// const btn1 = document.querySelector('.btn1')
+// const card1 = document.querySelector(".card1")
+// const card2 = document.querySelector(".card2")
+// const i = document.querySelector(".fa-x")
+// const btn2 = document.querySelector(".btn2")
+// btn1.addEventListener("click", function () {
+//     card1.classList.replace("hidden", "visible")
+//     btn1.classList.add("hidden")
+// })
+// i.addEventListener("click", function () {
+//     btn1.classList.remove('hidden')
+//     card1.classList.replace("visible", 'hidden')
+// })
+// btn2.addEventListener("click", function () {
+//     card1.classList.replace('visible', 'hidden')
+//     card2.classList.replace('hidden', 'visible')
+// })
+//// =============== variable page=====================
+
 // ==============mouse codes =======================
 let mouse = document.querySelector('.mouse')
 window.addEventListener("mousemove", (e) => {
@@ -1544,7 +1566,6 @@ window.addEventListener("mousemove", (e) => {
     const y = e.clientY
     mouse.style.cssText = `transform:translate(${x}px, ${y}px)`
 })// ==============mouse codes =======================
-
 document.addEventListener("DOMContentLoaded", function () {
     var button = document.getElementById("myButton");
     var input = document.getElementById("myInput");

@@ -71,9 +71,9 @@ button {
   margin-bottom: 50px;
 } */
 
-table {
+/* table {
   background-color: white;
-  /* border-collapse: collapse; */
+  border-collapse: collapse;
   border: 2px solid rgb(140 140 140);
   font-family: sans-serif;
   font-size: 0.8rem;
@@ -105,5 +105,5 @@ td:last-of-type {
 tbody>tr:nth-of-type(even) {
   background-color: rgb(237 238 242);
   text-align: end;
-}
+} */
 

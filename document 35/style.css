@@ -4,17 +4,16 @@
      padding: 0;
  }
 
- .container {
+ /* .container {
      min-height: 100vh;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
      color: white;
-     background-color: black;
- }
+ } */
 
- .hidden {
+ /* .hidden {
      display: none;
  }
  .visible{
@@ -63,16 +62,21 @@ display: block;
      padding: 2rem 5rem;
      background-color: rgba(0, 0, 0, 0.153);
      border: rgba(255, 255, 255, 0.217) 2px solid;
+ } */
+
+ li {
+     font-size: 10px;
  }
 
- /* .wrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-} */
+ .wrapper {
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
 
- /* .card {
-    max-width: 299px;
-    text-align: center;
-    margin: 50px 36px 30px;
-} */
+ .card {
+     max-width: 240px;
+     text-align: center;
+     margin: 50px 36px 30px;
+ }
