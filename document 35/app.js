@@ -1,5 +1,17 @@
 "use strict"
 
+// const card = document.querySelector('card')
+// const wrapper = document.querySelector('.wrapper')
+// const select = document.querySelector('#select')
+// function dF(data) {
+//   data.forEach((item) => {
+//     const div = document.createElement('div')
+//     div.setAttribute('class', 'card')
+
+//   });
+// }
+
+
 const card = document.querySelector('.card');
 let mouse = document.querySelector('.mouse');
 const input = document.querySelector('input');
@@ -25,7 +37,7 @@ const dinamicF = (data) => {
           <li>Chipset: ${e.chipset}</li>
           <li>ReleasedDate: ${e.releasedDate}</li>
         </ul>
-        <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Button</a>
+        <a href="#!" class="btn btn-primary w-75" data-mdb-ripple-init>Buy</a>
       </div>`;
     wrapper.append(div)
   });
