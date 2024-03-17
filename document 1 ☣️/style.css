@@ -3,51 +3,31 @@
      margin: 0;
      padding: 0;
  }
-/* main classes */
-.tC{
-    text-align: center;
-}
-/* /main classes */
 
- .container {
-     width: 100%;
-     min-height: 100vh;
-     font-family: sans-serif;
-     color: white;
-     background-color: black;
- }
-
- .container nav {
-     width: 100%;
-     height: 2.5rem;
-     display: flex;
-     justify-content: center;
-     font-size: 0.9rem;
-     align-items: center;
-     background-color: rgb(255, 255, 255);
+ .container-fluid nav {
+     width: 98%;
+     font-size: 0.8rem;
+     backdrop-filter: blur(8px);
+     background-color: rgba(0, 0, 0, 0.854);
      border-bottom: 1.5px solid black;
-     position: fixed;
-     top: 0px;
-     z-index: 2;
  }
 
- .container nav a img {
-     width: 2rem;
+ .logoImg {
+     width: 1rem;
+     height: 1.2rem;
  }
 
- .container nav ul {
-     width: 80%;
-     display: flex;
-     justify-content: space-around;
+ main {
+     margin-top: 2.3rem;
  }
 
- .container nav ul li {
-     display: inline-block;
+ .container-fluid main nav ul li a {
+     color: white;
  }
 
- main{
-    margin-top: 2.5rem;
-}
+ .h1 {
+     margin-top: 100px;
+ }
 
  /*
 .navbar__ul .li a:hover {
