@@ -4,28 +4,13 @@
      padding: 0;
  }
 
- /* .container {
+ .container {
      min-height: 100vh;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
      color: white;
- } */
-
- /* .hidden {
-     display: none;
- }
- .visible{
-display: block;
- }
-
- .btnStyle {
-     width: 15rem;
-     padding: 10px;
-     border-radius: 10px;
-     margin-top: 1rem;
-     background-color: rgb(228, 183, 71);
  }
 
  .card1 {
@@ -46,11 +31,6 @@ display: block;
      justify-content: space-around;
  }
 
- .card1 i {
-     float: right;
-     color: rgba(255, 255, 255, 0.221);
- }
-
  .card1 .wrap input {
      padding: 10px;
      border-radius: 10px;
@@ -62,9 +42,9 @@ display: block;
      padding: 2rem 5rem;
      background-color: rgba(0, 0, 0, 0.153);
      border: rgba(255, 255, 255, 0.217) 2px solid;
- } */
+ }
 
- li {
+ /* li {
      font-size: 10px;
  }
 
@@ -79,4 +59,4 @@ display: block;
      max-width: 240px;
      text-align: center;
      margin: 50px 36px 30px;
- }
+ } */
