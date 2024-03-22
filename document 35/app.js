@@ -1,6 +1,7 @@
 "use strict"
 const form = document.querySelector('form')
 const input = document.querySelector('.input')
+const input2 = document.querySelector('.input2')
 const btn1 = document.querySelector('.btn1')
 const card1 = document.querySelector('.card1')
 const card2 = document.querySelector('.card2')
@@ -20,17 +21,13 @@ btn2.addEventListener('click', () => {
     input.style.cssText = "border:red solid 2px";
     setTimeout(() => {
       input.style.cssText = ""; // Avvalgi stilni o'chiramiz
-    }, 3000); // 3000 millisekund (3 soniya) kutamiz
+    }, 3000);
   }
   if (!input.value == "") {
     card1.classList.replace("d-block", 'd-none');
     card2.classList.replace('d-none', 'd-block');
   }
 });
-
-
-
-
 
 // const card = document.querySelector('.card');
 // let mouse = document.querySelector('.mouse');

@@ -1559,38 +1559,78 @@
 // })
 //// =============== variable page=====================
 
-// ==============mouse codes =======================
-let mouse = document.querySelector('.mouse')
-window.addEventListener("mousemove", (e) => {
-    const x = e.clientX
-    const y = e.clientY
-    mouse.style.cssText = `transform:translate(${x}px, ${y}px)`
-})// ==============mouse codes =======================
-document.addEventListener("DOMContentLoaded", function () {
-    var button = document.getElementById("myButton");
-    var input = document.getElementById("myInput");
-    button.addEventListener("click", function () {
-        var inputValue = input.value.trim();
-        if (inputValue.length < 4) {
-            input.style.border = "3px solid red";
-        } else if (inputValue.length > 8) {
-            input.style.border = "3px solid green";
-        }
-    });
-});
+// // ==============mouse codes =======================
+// let mouse = document.querySelector('.mouse')
+// window.addEventListener("mousemove", (e) => {
+//     const x = e.clientX
+//     const y = e.clientY
+//     mouse.style.cssText = `transform:translate(${x}px, ${y}px)`
+// })// ==============mouse codes =======================
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     var button = document.getElementById("myButton");
+//     var input = document.getElementById("myInput");
+//     button.addEventListener("click", function () {
+//         var inputValue = input.value.trim();
+//         if (inputValue.length < 4) {
+//             input.style.border = "3px solid red";
+//         } else if (inputValue.length > 8) {
+//             input.style.border = "3px solid green";
+//         }
+//     });
+// });
 
+// bu kodda 1 ta input elementiga nisbatan style o'zgarishi ishlatilgan men 2 ta inputga nisbatan ishlatmoqchiman. shart: brinchin input bo'sh bo'lsa ikkala inputga style berilsin , agar ikkalasi ham bosh
 
+const arr = ['php', 'ruby', 'golang', 'js', 'vue js', 'angular', 'react js'];
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const copy = array   //Shallow clone / copy
+// copy.push(11)
+// console.log("1 :", array);
+// console.log("2 :", copy);
 
+// const clone = []
+// for (let i of array) {// Deep clone / copy
+//     clone.push(i)
+// }
+// clone.push(10)
+// console.log(array);
+// console.log(clone);
 
+// const clone = []
+// array.forEach(el => {// Deep copy / clone
+//     clone.push(el)
+// })
+// clone.push(11)
+// console.log(array);
+// console.log(clone);
 
+// const clone = array.map(el => el)
+// array.push(12)
+// clone.push(11)
+// console.log(array);
+// console.log(clone);
 
+// const [one, two, three, four, ...any] = arr
+// const id1 = one
+// const id4 = four
+// console.log(id4);
 
+// const car = {
+//     isName: 'Mercedes-Benz',
+//     color: 'black',
+//     speed: 196,
+//     full: {
+//         country: 'Germany',
+//         date: {
+//             startedAt: '20/15/2020',
+//             finishedAt: '20/15/2030',
+//         }
+//     }
+// }
+// const { isName, color, speed, full: { country, date: { startedAt, finishedAt } } } = car
+// console.log(isName, color, speed, country, startedAt, finishedAt);
 
-
-
-
-
-
+ 
 
 
