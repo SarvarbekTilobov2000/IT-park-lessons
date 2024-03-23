@@ -1582,8 +1582,8 @@
 
 // bu kodda 1 ta input elementiga nisbatan style o'zgarishi ishlatilgan men 2 ta inputga nisbatan ishlatmoqchiman. shart: brinchin input bo'sh bo'lsa ikkala inputga style berilsin , agar ikkalasi ham bosh
 
-const arr = ['php', 'ruby', 'golang', 'js', 'vue js', 'angular', 'react js'];
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const arr = ['php', 'ruby', 'golang', 'js', 'vue js', 'angular', 'react js'];
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const copy = array   //Shallow clone / copy
 // copy.push(11)
 // console.log("1 :", array);
@@ -1631,6 +1631,15 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const { isName, color, speed, full: { country, date: { startedAt, finishedAt } } } = car
 // console.log(isName, color, speed, country, startedAt, finishedAt);
 
- 
+const btn = document.querySelector('.btn');
+let a = 0;
+const dt = setInterval(() => {
+    a++;
+    console.log(`step${a}`);
+}, 1000)
+btn.addEventListener('click', () => {
+    clearInterval(dt)
+})
+
 
 
