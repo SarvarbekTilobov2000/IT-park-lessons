@@ -1644,4 +1644,3 @@
 const b = ['sarvar', 'shukrona', 'doniyor']
 console.log(b.reverse().map((e) => { console.log(e) }))
 
-
