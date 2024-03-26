@@ -1532,7 +1532,7 @@
 // })
 // ul.addEventListener("click", function (e) {
 //     // if (e.target.tagName == 'LI') {
-//        // e.target.remove()    
+//        // e.target.remove()
 //     // }
 //     // console.log(e.target.tagName);
 // })
@@ -1631,15 +1631,17 @@
 // const { isName, color, speed, full: { country, date: { startedAt, finishedAt } } } = car
 // console.log(isName, color, speed, country, startedAt, finishedAt);
 
-const btn = document.querySelector('.btn');
-let a = 0;
-const dt = setInterval(() => {
-    a++;
-    console.log(`step${a}`);
-}, 1000)
-btn.addEventListener('click', () => {
-    clearInterval(dt)
-})
+// const btn = document.querySelector('.btn');
+// let a = 0;
+// const dt = setInterval(() => {
+//     a++;
+//     console.log(`step${a}`);
+// }, 1000)
+// btn.addEventListener('click', () => {
+//     clearInterval(dt)
+// })
 
+const b = ['sarvar', 'shukrona', 'doniyor']
+console.log(b.reverse().map((e) => { console.log(e) }))
 
 

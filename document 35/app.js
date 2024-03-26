@@ -1,62 +1,50 @@
 "use strict"
-// const form = document.querySelector('form')
-// const input1 = document.querySelector('.input1')
-// const input2 = document.querySelector('.input2')
-// const btn1 = document.querySelector('.btn1')
-// const card1 = document.querySelector('.card1')
-// const card2 = document.querySelector('.card2')
-// const icon = document.querySelector('.fa-x')
-// const btn2 = document.querySelector('.btn2')
+const form = document.querySelector('.form')
+const input1 = document.querySelector('.input1')
+const input2 = document.querySelector('.input2')
+const btn1 = document.querySelector('.btn1')
+const card1 = document.querySelector('.card1')
+const card2 = document.querySelector('.card2')
+const icon = document.querySelector('.fa-x')
+const btn2 = document.querySelector('.btn2')
 
-// btn1.addEventListener('click', () => {
-//   btn1.classList.add('d-none')
-//   card1.classList.replace('d-none', 'd-block')
-// })
-// icon.addEventListener('click', () => {
-//   btn1.classList.replace('d-none', 'd-block')
-//   card1.classList.replace('d-block', 'd-none')
-// })
-// const notErr = (i1, i2) => { i1.classList.replace("d-block", 'd-none'); i2.classList.replace('d-none', 'd-block'); }
+btn1.addEventListener('click', () => {
+  btn1.classList.add('d-none')
+  card1.classList.replace('d-none', 'd-block')
+})
+icon.addEventListener('click', () => {
+  btn1.classList.replace('d-none', 'd-block')
+  card1.classList.replace('d-block', 'd-none')
+})
+const notErr = (i1, i2) => { i1.classList.replace("d-block", 'd-none'); i2.classList.replace('d-none', 'd-block'); }
+const showErr1 = (i1, i2) => {
+  i1.style.cssText = "border:red solid 2px"; i2.style.cssText = "border:red solid 2px";
+  setTimeout(() => { i1.style.cssText = ""; }, 1000); setTimeout(() => { i2.style.cssText = ""; }, 1500)
+}
 
-// const showErr1 = (i1, i2) => {
-//   i1.style.cssText = "border:red solid 2px"; i2.style.cssText = "border:red solid 2px";
-//   setTimeout(() => { i1.style.cssText = ""; }, 1000); setTimeout(() => { i2.style.cssText = ""; }, 1500)
-// }
+const showErr2 = (i1, i2) => {
+  i1.style.cssText = ""; i2.style.cssText = "border:red solid 2px";
+  setTimeout(() => { i2.style.cssText = ""; }, 1500)
+}
 
-// const showErr2 = (i1, i2) => {
-//   i1.style.cssText = ""; i2.style.cssText = "border:red solid 2px";
-//   setTimeout(() => { i2.style.cssText = ""; }, 1500)
-// }
+const showErr3 = (i1, i2) => {
+  i1.style.cssText = "border:red solid 2px"; i2.style.cssText = "";
+  setTimeout(() => { i1.style.cssText = ""; }, 1000)
+}
+form.addEventListener('submit', (e) => { e.preventDefault() })
+btn2.addEventListener('click', () => {
 
-// const showErr3 = (i1, i2) => {
-//   i1.style.cssText = "border:red solid 2px"; i2.style.cssText = "";
-//   setTimeout(() => { i1.style.cssText = ""; }, 1000)
-// }
+  if (!input1.value == "" && !input2.value == "") { notErr(card1, card2) }//1 va 2 bor
+  if (input1.value == "" && input2.value == "") { showErr1(input1, input2) }//1 va 2 bo'sh
+  if (input1.value == "" && !input2.value == "") { showErr3(input1, input2) }//1 bo'sh va 2 bor
+  if (!input1.value == "" && input2.value == "") { showErr2(input1, input2) }//1 bor va 2 bo'sh
+});
 // btn2.addEventListener('click', () => {
 //   if (!input1.value == "" && !input2.value == "") { notErr(card1, card2) }//1 va 2 bor
 //   if (input1.value == "" && input2.value == "") { showErr1(input1, input2) }//1 va 2 bo'sh
 //   if (input1.value == "" && !input2.value == "") { showErr3(input1, input2) }//1 bo'sh va 2 bor
 //   if (!input1.value == "" && input2.value == "") { showErr2(input1, input2) }//1 bor va 2 bo'sh
 // });
-//====================================================================
-// const showError = (input1, input2) => {
-//   input1.style.border = 'red solid 2px';
-//   input2.style.border = 'red solid 2px';
-//   setTimeout(() => {
-//     input1.style.border = '';
-//     input2.style.border = '';
-//   }, 1500);
-// };
-
-// btn2.addEventListener('click', () => {
-//   if (input1.value && input2.value) {
-//     card1.classList.replace('d-block', 'd-none');
-//     card2.classList.replace('d-none', 'd-block');
-//   } else {
-//     showError(input1, input2);
-//   }
-// });
-//==============================================================================
 
 // const card = document.querySelector('.card');
 // let mouse = document.querySelector('.mouse');
