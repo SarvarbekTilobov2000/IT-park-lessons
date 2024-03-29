@@ -1641,6 +1641,54 @@
 //     clearInterval(dt)
 // })
 
-const b = ['sarvar', 'shukrona', 'doniyor']
-console.log(b.reverse().map((e) => { console.log(e) }))
+// const div = document.querySelector('.divI')
+// const btn = document.querySelector('button')
+// let i = 0;
+// const dt = setInterval(() => {
+//     i++
+//     const item = document.createElement('h1')
+//     item.innerHTML = `step ${i}`
+//     div.append(item)
+// }, 1000)
+// btn.addEventListener('click', () => { div.remove() })
+// setTimeout(() => {
+//     clearInterval(dt)
+// }, 3000);
+
+// async function getWork() {
+//     let stop = await 100;
+//     for (let i = 0; i <= stop; i++) {
+//         console.log(i);
+//     }
+// }
+// getWork()
+// console.log('hello');
+
+// const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const promise = new Promise((resolve, reject) => {
+//     if (data) {
+//         return resolve('resollve wrked ')
+//     } else {
+//         return reject('arr is not definet')
+//     }
+// });
+// // console.log(promise);
+// promise.then((db) => console.log(db)).catch((bb) => console.log(bb))
+
+const ism = false;
+const my = () => {
+    return new Promise((resolve, reject) => {
+        if (ism) {
+            resolve(console.log('resolve worked'));
+        } else {
+            reject(console.log('reject worked'));
+        }
+    })
+}
+my().then((data0) => { return data0 }).catch((data1) => { return data1 })
+
+
+
+
+
 
