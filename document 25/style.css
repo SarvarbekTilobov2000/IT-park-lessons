@@ -8,15 +8,29 @@
   background-color: black;
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   /* justify-content: center; */
-  align-items: center;
+  /* align-items: center; */
   /* text-align: center;
   padding-top: 50px;*/
-  color: white; 
+  color: white;
   /* font-size: 50px; */
   font-family: monospace;
+}
+
+.container .card {
+  height: 30rem;
+  text-align: center;
+  margin: 20px;
+}
+
+.container img {
+  height: 20rem;
+}
+
+.container .ds {
+  overflow: auto;
 }
 
 /* ================mouse styles=============== */
@@ -107,4 +121,3 @@ tbody>tr:nth-of-type(even) {
   background-color: rgb(237 238 242);
   text-align: end;
 } */
-

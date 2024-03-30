@@ -1673,19 +1673,54 @@
 //     }
 // });
 // // console.log(promise);
+// container.textContent = JSON.stringify(data, null, 2);
+
 // promise.then((db) => console.log(db)).catch((bb) => console.log(bb))
 
-const ism = false;
-const my = () => {
-    return new Promise((resolve, reject) => {
-        if (ism) {
-            resolve(console.log('resolve worked'));
-        } else {
-            reject(console.log('reject worked'));
-        }
-    })
+// const ism = false;
+// const my = () => {
+//     return new Promise((resolve, reject) => {
+//         if (ism) {
+//             resolve(console.log('resolve worked'));
+//         } else {
+//             reject(console.log('reject worked'));
+//         }
+//     })
+// }
+// my().then((data0) => { return data0 }).catch((data1) => { return data1 })
+
+const container = document.querySelector('.container');
+const base = 'https://fakestoreapi.com';
+
+function f() {
+    return fetch(`${base}/products`)
+        .then((res) => res.json())
+        .then((data) => {
+            fr(data)
+        });
 }
-my().then((data0) => { return data0 }).catch((data1) => { return data1 })
+
+function fr(it) {
+    it.forEach(e => {
+        console.log(e);
+        const box = document.createElement('div')
+        const img = document.createElement('img')
+        const newItem = document.createElement('div')
+        const ds = document.createElement('div')
+        box.setAttribute('class', 'card bg-primary mt-5 w-25 p-1')
+        img.setAttribute('src', `${e.image}`)
+        newItem.innerHTML = `<h5>${e.title}</h5>`
+        ds.innerHTML = `<p>${e.description}</p>`
+        ds.setAttribute('class', 'ds')
+        box.append(img)
+        box.append(newItem)
+        box.append(ds)
+        container.append(box)
+    });
+}
+f();
+
+
 
 
 
