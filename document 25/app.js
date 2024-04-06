@@ -1767,9 +1767,18 @@
 // //     console.log(`last-name :${e.last_name},first-name :${e.first_name} email: ${e.email}`);
 // // });
 
-
-
-
+const url = "https://jsonplaceholder.typicode.com";
+async function app() {
+    try {
+        const response = await fetch(`${url}/posts`);
+        const res = await response.json();
+        console.log(res);
+    }
+    catch (err) {
+        console.log(err);
+    }
+};
+app()
 
 
 
