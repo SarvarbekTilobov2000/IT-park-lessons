@@ -1357,7 +1357,7 @@
 //     job: "developer",
 //     myInfo: function () {
 //         return `SAlom mening ismim ${this.name} familiyam ${this.surname}, men ${this.region} viloyatida yashayman, meing yoshim ${this.age}  da va men 5 yildan buyon ${this.job} bo'lib ishlab kelaman`;
-//     }
+//     },
 // }
 // const res = person.myInfo();
 // function result() {
@@ -1767,19 +1767,28 @@
 // //     console.log(`last-name :${e.last_name},first-name :${e.first_name} email: ${e.email}`);
 // // });
 
-const url = "https://jsonplaceholder.typicode.com";
-async function app() {
-    try {
-        const response = await fetch(`${url}/posts`);
-        const res = await response.json();
-        console.log(res);
-    }
-    catch (err) {
-        console.log(err);
-    }
-};
-app()
+// const url = "https://jsonplaceholder.typicode.com";
+// async function app() {
+//     try {
+//         const response = await fetch(`${url}/posts`);
+//         const res = await response.json();
+//         console.log(res);
+//     }
+//     catch (err) {
+//         console.log(err);
+//     }
+// };
+// app()
 
+// const epam = ['window-1', 'window-2', 'window-3', 'window-4', 'window-5']
+// let clone = [...epam];
+// console.log(clone[2]);
 
+// const personInfo = {
+//     id: 2,
+//     description: 'this is good developer',
+//     level: "senior",
+// }
+// const pClone = { ...personInfo };
 
 
