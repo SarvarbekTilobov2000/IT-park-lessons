@@ -1580,8 +1580,6 @@
 //     });
 // });
 
-// bu kodda 1 ta input elementiga nisbatan style o'zgarishi ishlatilgan men 2 ta inputga nisbatan ishlatmoqchiman. shart: brinchin input bo'sh bo'lsa ikkala inputga style berilsin , agar ikkalasi ham bosh
-
 // const arr = ['php', 'ruby', 'golang', 'js', 'vue js', 'angular', 'react js'];
 // const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const copy = array   //Shallow clone / copy
