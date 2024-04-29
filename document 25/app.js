@@ -160,13 +160,12 @@
 // if (x >= 60) {
 //     console.log("siz radarga tushdingiz");
 // }
-// else if(x<=59){
+// else if (x <= 59) {
 //     console.log("siz normal tezlikdasiz");
 // }
 // else {
-//     console.log("siz radarga tushmadingiz");
+//     console.log("else worked");
 // }
-
 
 // // IF ELSE  BO'YICHA amaliy dastur                                       ➡️
 // const htmlPassed = false;
@@ -210,7 +209,7 @@
 //     console.log("maxsulot istemolga yaroqsiz");
 // }
 
-// // MANFIY  OR MUSBAT amaliy is >>>>>>>>IF ELSE
+// // MANFIY  OR MUSBAT  >>>>>>>>IF ELSE
 // const s = +prompt("javobingizni kiriting");
 // if (s > 0) {
 //     console.log("kiritilgan noldan katta");
@@ -293,7 +292,7 @@
 //     console.log("bu rang hisoblanmaydi");
 // }
 
-// //JUFT YOKI TOQ SON LARNI ANIQLOVCHI  AMALIY ISH                                            ➡️
+// //JUFT YOKI TOQ SON LARNI ANIQLOVCHI    kod                                 ➡️
 // let a = +prompt("enter the number")
 // if (a % 2 == 0) {// bu yerda  kiritilgan data qoldiqli 2 ga bo'linadi  va qoldiq 0 ga teng bolsa juft boladi
 //                                                              //   aks holda toq boladi
@@ -458,7 +457,7 @@
 // console.log(inson.age);//obyekt ichidagi qiymat chaqirib olindi boshqalari ham shu ko'rinish da chaqiriladi
 
 // // For
-// // javascript tilida >>> FOR loop dan foydalanib malum bir kod bloki ni  bir naecha bor ishga tushurish mumkun
+// // javascript da >>> FOR loop dan foydalanib malum bir kod bloki ni  bir naecha bor ishga tushurish mumkun
 // // umumiy ko`rinishi { boshlangichifoda : tekshiruv sharti : tanasi }
 // // BOSHLANGICH IFODA ---o`zgaruvchilarni elon qilish uchun yoziladi  va bir marta ishga tushadi
 // // TEKSHIRUV SHARTI berilgan shart tekshirikadi  agar rost bo`lsa berilgan kod blok ishga tushadi  false bo`lsa  for loop tugatiladi
@@ -748,50 +747,6 @@
 // m(function (n) {
 //     console.log(n);
 // })
-
-// //====================================================================================================
-// let numberseries;        //➡️➡️➡️
-// function startApp() {
-//     numberseries = +prompt("nechta serial ho'rdingiz", "")
-//     while (numberseries == "" || numberseries == null || isNaN(numberseries)) {
-//         numberseries = +prompt("nechta serial ho'rdingiz", "")
-//     }
-// }
-// startApp()
-
-// const seriesDB = {
-//     count: numberseries,//bu yerga numberSeries ga kiritilgan qiymat kelib tushadi
-//     series: {},//bo'sh object
-//     actors: [],
-//     genres: false,
-//     private: false,
-// };
-// const a = prompt("ohirgi korgan serialingiz"),                           //➡️➡️➡️
-//     b = prompt("nechi baho berasiz "),
-//     c = prompt("ohirgi korgan serialingiz"),
-//     d = prompt("nechi baho berasiz ");
-// seriesDB.series[a] = b;// bu kodda abyekt ga xususiyat berilmoqda yani a= (ohirgi korgan serial) b=(bahosiga) shunda seriesDb ichida  key=[a] and Value=b boladi
-// seriesDB.series[c] = d;//object ga hususiyat berayotganda [] bn beriladdi
-// for (let i = 0; i < 2; i++) {
-//     const a = prompt("ohirgi korgan serialingiz"),
-//         b = prompt("nechi baho berasiz ");
-//     if (a != null && b != null && a != "" && b != "") {
-//         seriesDB.series[a] = b;
-//         console.log("done");
-//     }
-//     else {
-//         console.log("error");
-//         i--
-//     }
-// }
-// if (seriesDB.count < 5) {
-//     console.log("Kam serial ko'ribsiz");
-// } else if (5 < seriesDB.count < 10) {
-//     console.log("siz klassik tomoshabin ekansiz");
-// }
-
-// console.log(seriesDB);
-// //====================================================================================================
 
 // const inRange = (min, max, number) => {                                          //➡️➡️➡️
 //     if (number >= min && number <= max) {
@@ -1392,7 +1347,7 @@
 //     return input.setAttribute("type", "password")
 // }
 
-// let jm = ["Amazon", "Google", "Nik", "result"]//=======================
+// let jm = ["Amazon", "Google", "Nike", "result"]//=======================
 // for (let i = 0; i < jm.length; i++) {
 //     const ress = (jm[i].charAt(5));
 //     if (ress) {
@@ -1789,4 +1744,53 @@
 // }
 // const pClone = { ...personInfo };
 
+//====================================================================================================//➡️➡️➡️
 
+const seriesDb = {
+    actors: [],
+    count: 0,
+    genres: false,
+    private: false,
+    series: {},
+    startApp: function () {
+        seriesDb.count = +prompt("nechta serial ho'rdingiz", "")
+        while (seriesDb.count == '' || seriesDb.count == null || seriesDb.count == isNaN(seriesDb.count)) {
+            seriesDb.count = +prompt("nechta serial ko'rdingiz", '')
+        }
+    },
+    rememberMySeries: function () {
+        for (let i = 0; i < 2; i++) {
+            const a = prompt("ohirgi korgan serialingiz"),
+                b = prompt("nechi baho berasiz ");
+            if (a != null && b != null && a != "" && b != "") {
+                seriesDb.series[a] = b;
+                console.log("done");
+            }
+            else {
+                console.log("error");
+                i--
+            }
+        }
+    },
+    detectLevelSeries: function () {
+        if (seriesDb.count < 5) {
+            console.log("Kam serial ko'ribsiz");
+        } else if (5 < seriesDb.count < 10) {
+            console.log("siz klassik tomoshabin ekansiz");
+        } else if (seriesDb.count >= 10) {
+            console.log("siz meyordan ortiq serial ko'rasiz");
+        } else {
+            console.log('Error');
+        }
+    },
+    showDb
+};
+console.log(seriesDb);
+
+// const a = prompt("ohirgi korgan serialingiz"),
+//     b = prompt("nechi baho berasiz"),
+//     c = prompt("ohirgi korgan serialingiz"),
+//     d = prompt("nechi baho berasiz ");
+// seriesDB.series[a] = b;// bu kodda abyekt ga xususiyat berilmoqda yani a= (ohirgi korgan serial) b=(bahosiga) shunda seriesDb ichida  key=[a] and Value=b boladi
+// seriesDB.series[c] = d;//object ga hususiyat berayotganda [] bn beriladdi
+//====================================================================================================
