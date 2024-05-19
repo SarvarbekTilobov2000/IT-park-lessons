@@ -642,11 +642,15 @@
 // }  const a = calcArea(21)
 // console.log(a);
 
-// ELEMENTLARNI O'ZGARTIRISH>>>>>>>>>>.
-// element matnini ozgartirish
+// // ELEMENTLARNI matnini O'ZGARTIRISH>>>>>>>>>>.
 // const item = document.getElementbyID(`sarlavha`);
 // item.textContent = 'yangi matn';
 // document.getElementById('sarlavha');
+
+let word = "Salom ''";
+console.log(word);
+word.textContent = `Salom Sarvarbek`
+
 
 // const byClassName = document.getElementsByClassName('text');
 // const byID = document.getElementById('text');
@@ -1744,53 +1748,61 @@
 // }
 // const pClone = { ...personInfo };
 
-//====================================================================================================//➡️➡️➡️
+// //====================================================================================================//➡️➡️➡️
+// const seriesDb = {
+//     actors: [],
+//     count: 0,
+//     genres: false,
+//     private: false,
+//     series: {},
+//     startApp: function () {
+//         seriesDb.count = +prompt("nechta serial ho'rdingiz", "")
+//         while (seriesDb.count == '' || seriesDb.count == null || seriesDb.count == isNaN(seriesDb.count)) {
+//             seriesDb.count = +prompt("nechta serial ko'rdingiz", '')
+//         }
+//     },
+//     rememberMySeries: function () {
+//         for (let i = 0; i < 2; i++) {
+//             const a = prompt("ohirgi korgan serialingiz"),
+//                 b = prompt("nechi baho berasiz ");
+//             if (a != null && b != null && a != "" && b != "") {
+//                 seriesDb.series[a] = b;
+//                 console.log("done");
+//             }
+//             else {
+//                 console.log("error");
+//                 i--
+//             }
+//         }
+//     },
+//     detectLevelSeries: function () {
+//         if (seriesDb.count < 5) {
+//             console.log("Kam serial ko'ribsiz");
+//         } else if (5 < seriesDb.count < 10) {
+//             console.log("siz klassik tomoshabin ekansiz");
+//         } else if (seriesDb.count >= 10) {
+//             console.log("siz meyordan ortiq serial ko'rasiz");
+//         } else {
+//             console.log('Error');
+//         }
+//     },
+//     showDb
+// };
+// console.log(seriesDb);
 
-const seriesDb = {
-    actors: [],
-    count: 0,
-    genres: false,
-    private: false,
-    series: {},
-    startApp: function () {
-        seriesDb.count = +prompt("nechta serial ho'rdingiz", "")
-        while (seriesDb.count == '' || seriesDb.count == null || seriesDb.count == isNaN(seriesDb.count)) {
-            seriesDb.count = +prompt("nechta serial ko'rdingiz", '')
-        }
-    },
-    rememberMySeries: function () {
-        for (let i = 0; i < 2; i++) {
-            const a = prompt("ohirgi korgan serialingiz"),
-                b = prompt("nechi baho berasiz ");
-            if (a != null && b != null && a != "" && b != "") {
-                seriesDb.series[a] = b;
-                console.log("done");
-            }
-            else {
-                console.log("error");
-                i--
-            }
-        }
-    },
-    detectLevelSeries: function () {
-        if (seriesDb.count < 5) {
-            console.log("Kam serial ko'ribsiz");
-        } else if (5 < seriesDb.count < 10) {
-            console.log("siz klassik tomoshabin ekansiz");
-        } else if (seriesDb.count >= 10) {
-            console.log("siz meyordan ortiq serial ko'rasiz");
-        } else {
-            console.log('Error');
-        }
-    },
-    showDb
-};
-console.log(seriesDb);
+// // const a = prompt("ohirgi korgan serialingiz"),
+// //     b = prompt("nechi baho berasiz"),
+// //     c = prompt("ohirgi korgan serialingiz"),
+// //     d = prompt("nechi baho berasiz ");
+// // seriesDB.series[a] = b;// bu kodda abyekt ga xususiyat berilmoqda yani a= (ohirgi korgan serial) b=(bahosiga) shunda seriesDb ichida  key=[a] and Value=b boladi
+// // seriesDB.series[c] = d;//object ga hususiyat berayotganda [] bn beriladdi
+// //====================================================================================================
 
-// const a = prompt("ohirgi korgan serialingiz"),
-//     b = prompt("nechi baho berasiz"),
-//     c = prompt("ohirgi korgan serialingiz"),
-//     d = prompt("nechi baho berasiz ");
-// seriesDB.series[a] = b;// bu kodda abyekt ga xususiyat berilmoqda yani a= (ohirgi korgan serial) b=(bahosiga) shunda seriesDb ichida  key=[a] and Value=b boladi
-// seriesDB.series[c] = d;//object ga hususiyat berayotganda [] bn beriladdi
-//====================================================================================================
+// fsyavsusy663ghs6gshsy
+
+
+
+
+
+
+
