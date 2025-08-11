@@ -1,12 +1,14 @@
-"use strict"
+// const btn = document.querySelector('.btn')
+// btn.addEventListener('click', function () {
+//     document.querySelector(".text").innerHTML = "New text";
+//     const c = 0
+//     c++
+//     if (c % 2) {
 
-// document.write("hello world");
-// document.write("developer")
-// const db = ('<h1>senior developer</h1>')
+//     }
+// })
+// const db = '<h1>senior developer</h1>'
 // console.log(db);
-//  document.getElementById("text").innerHTML = "New text";
-// const db =  5 + 10
-// console.log(db)
 
 // console.log(
 // 13 % 3
@@ -15,7 +17,7 @@
 
 // var ism = "Abbosbek";
 // var ism = "Jo'rabek" // qayta elon qilish
-// ism='New name'  //Qayta qiymatlash
+// ism = 'New name'  //Qayta qiymatlash
 // console.log(ism);
 
 // let ism = "Samandar";
@@ -508,7 +510,6 @@
 //     document.body.style.backgroundColor = "#fff";
 // }
 
-
 // function declaration() {
 //     console.log("function declaration");
 // }
@@ -571,7 +572,6 @@
 //     let result = ism[i] + "bek";
 //     console.log(result);
 // }
-
 
 // let ism = [`sardor`, `sarvar`, `diyor`]
 // let i = 0;
@@ -646,11 +646,6 @@
 // const item = document.getElementbyID(`sarlavha`);
 // item.textContent = 'yangi matn';
 // document.getElementById('sarlavha');
-
-let word = "Salom ''";
-console.log(word);
-word.textContent = `Salom Sarvarbek`
-
 
 // const byClassName = document.getElementsByClassName('text');
 // const byID = document.getElementById('text');
@@ -1173,7 +1168,6 @@ word.textContent = `Salom Sarvarbek`
 //     card.innerHTML = `<h1>Bu turdagi jins topilmadi</h1>`
 // }
 
-
 // function myName(a, b) {
 //     console.log(`${a} ning kasbi ${b}`);
 // }
@@ -1184,7 +1178,6 @@ word.textContent = `Salom Sarvarbek`
 // const arrov (salomber){
 // }
 // arrov('salom')
-
 
 // for (let i = 0; i <= 100; i++) {
 //     if (i % 2 == 1) {
@@ -1750,45 +1743,65 @@ word.textContent = `Salom Sarvarbek`
 
 // //====================================================================================================//➡️➡️➡️
 // const seriesDb = {
-//     actors: [],
-//     count: 0,
-//     genres: false,
-//     private: false,
-//     series: {},
-//     startApp: function () {
-//         seriesDb.count = +prompt("nechta serial ho'rdingiz", "")
-//         while (seriesDb.count == '' || seriesDb.count == null || seriesDb.count == isNaN(seriesDb.count)) {
-//             seriesDb.count = +prompt("nechta serial ko'rdingiz", '')
-//         }
-//     },
-//     rememberMySeries: function () {
-//         for (let i = 0; i < 2; i++) {
-//             const a = prompt("ohirgi korgan serialingiz"),
-//                 b = prompt("nechi baho berasiz ");
-//             if (a != null && b != null && a != "" && b != "") {
-//                 seriesDb.series[a] = b;
-//                 console.log("done");
-//             }
-//             else {
-//                 console.log("error");
-//                 i--
-//             }
-//         }
-//     },
-//     detectLevelSeries: function () {
-//         if (seriesDb.count < 5) {
-//             console.log("Kam serial ko'ribsiz");
-//         } else if (5 < seriesDb.count < 10) {
-//             console.log("siz klassik tomoshabin ekansiz");
-//         } else if (seriesDb.count >= 10) {
-//             console.log("siz meyordan ortiq serial ko'rasiz");
-//         } else {
-//             console.log('Error');
-//         }
-//     },
-//     showDb
+//   actors: [],
+//   count: 0,
+//   genres: false,
+//   private: false,
+//   series: {},
+//   start: function () {
+//     seriesDb.count = +prompt("nechta serial ho'rdingiz", "");
+//     while (
+//       seriesDb.count == "" ||
+//       seriesDb.count == null ||
+//       seriesDb.count == isNaN(seriesDb.count)
+//     ) {
+//       seriesDb.count = +prompt("nechta serial ko'rdingiz", "");
+//     }
+//   },
+//   rememberMySeries: function () {
+//     for (let i = 0; i < 2; i++) {
+//       const a = prompt("ohirgi korgan serialingiz"),
+//         b = prompt("nechi baho berasiz ");
+//       if (a != null && b != null && a != "" && b != "") {
+//         seriesDb.series[a] = b;
+//         console.log("done");
+//       } else {
+//         console.log("error");
+//         i--;
+//       }
+//     }
+//   },
+//   detectLevelSeries: function () {
+//     if (seriesDb.count < 5) {
+//       console.log("Kam serial ko'ribsiz");
+//     } else if (5 < seriesDb.count < 10) {
+//       console.log("siz klassik tomoshabin ekansiz");
+//     } else if (seriesDb.count >= 10) {
+//       console.log("siz meyordan ortiq serial ko'rasiz");
+//     } else {
+//       console.log("Error");
+//     }
+//   },
+//   showDb: function () {
+//     if (!seriesDb.private) {
+//       console.log(seriesDb);
+//     }
+//   },
+
+//   // writeGenres: function () {
+//   //   for (let i = 0; i <= 2; i++) {
+//   //     seriesDb .genres[i]= prompt(`Yaxxshi ko'rgan janringiz ${i + 1}`);}
+//   //   }
 // };
-// console.log(seriesDb);
+
+// function writeGenres(){
+//   for(let i=0; i<=2; i++){
+//     const genre = prompt(`Yaxshi ko'rgan serialingiz ${i+1}`)
+//     console.log(ganre);
+//   }
+// }
+// writeGenres()
+
 
 // // const a = prompt("ohirgi korgan serialingiz"),
 // //     b = prompt("nechi baho berasiz"),
@@ -1798,11 +1811,380 @@ word.textContent = `Salom Sarvarbek`
 // // seriesDB.series[c] = d;//object ga hususiyat berayotganda [] bn beriladdi
 // //====================================================================================================
 
-// fsyavsusy663ghs6gshsy
+// function pow(x, y) {
+//     let res = 1
+//     for (let i = 0; i <= y; i++) {
+//       res *= x
+//     }
+//     return res
+//   }
+//   console.log(pow(3, 3))
+
+// let number = 2
+// function abs(n) {
+//   if (n < 0) {
+//     return -n;
+//   }
+//   return n;
+// }
+// console.log(abs(number));
+
+// function pow(n, d) {
+//   return n ** d
+// }
+// console.log(pow(number, 3));
+
+// function functionName(sqrt) {
+//     return sqrt ** 1 / 3;
+// }
+// let res = functionName(81);
+// console.log(res);
+
+// function testEven(p1) {
+//     return p1 % 2 === 0
+// }
+// console.log(testEven(4));
+
+// function bmi(weight, height) {                                       bmi test 👌
+//     var result = weight / Math.pow(height, 2)
+//     if (result <= 18.5) {
+//         return "Underweight";
+//     } else if (result <= 25) {
+//         return "Normal";
+//     } else if (result <= 30) {
+//         return "Overweight";
+//     } else {
+//         return "Obese";
+//     }
+// }
+
+// let str = 'str text logo'               //result == rts txet ogol 👌
+// function reverseWords(str) {
+//     let word = str.split(' ')
+//     let res = word.map(function (text) {
+//         return text.split('').reverse().join('')
+//     })
+//     return res.join(' ')
+// }
+// reverseWords(str)
+// // Option 2 
+// function reverseWords(str) {
+//     return str.split(' ').map(function (word) {
+//         return word.split('').reverse().join('');
+//     }).join(' ');
+// }
+
+// let str = 'abracadabra'                     //satrda nechta unli harf borligini bilish👌
+// function getCount(str) {
+//     let count = 0
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] == "a" || str[i] == "o" || str[i] == "u" || str[i] == "e" || str[i] == "i") {
+//             count++
+//         }
+//     }
+//     return count++
+// }
+// console.log(getCount(str));
+
+// let ar = [19, 5, 42, 2, 77]//---------------------------------------------------------------------
+// function sumTwoSmallestNumbers(numbers) {  
+
+// }
+// sumTwoSmallestNumbers(ar)
+
+// let str = 'ZpglnRxqenU'
+// function accum(s) {
+//   return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+// }
+// console.log(accum(str))
+// // 'Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu'
+
+// let str = "8 j 8 mBliB8g  imjB8B8  jl  B"
+// function noSpace(x) {
+//   let res = ''
+//   for (let i = 0; i < x.length; i++) {
+//     if (x[i] !== ' ') {
+//       x[i] = ''
+//     } else {
+//       res += x[i]
+//     }
+//     return res
+//   }
+// }
+// console.log(noSpace(str));
+
+// function mango(quantity, price) {
+//   // let free = Math.floor(quantity / 3)
+//   // let result = (quantity - free) * [price]
+//   // return result
+//   return price * (quantity - (quantity / 3))
+// }
+// console.log(mango(18, 6));
+
+
+// function calculator(a, b, sign) {
+//   if (sign == '+') {
+//     return a + b
+//   } else if (sign == '-') {
+//     return a - b
+//   } else if (sign == '*') {
+//     return a * b
+//   } else if (sign == '/') {
+//     return a / b
+//   } else {
+//     return "unknown value"
+//   }
+// }
+// console.log(4, 8, 'i');
+
+
+// let num = '9860123412734234';
+// function showTheCard(cardNumber) {
+//   if (cardNumber.length !== 16) {
+//     return `Karta raqami 16ta sondan iborat bo'lishi kerak`;
+//   }
+//   if (isNaN(cardNumber)) {
+//     return `Bu yerda faqat sonlar ishlatilishi kerak`;
+//   }
+//   if (!cardNumber.startsWith("8600") && !cardNumber.startsWith("9860")) {
+//     return `Bunaqa karta raqami yo'q`;
+//   }
+//   let result = '';
+//   for (let i = 0; i < cardNumber.length; i++) {
+//     if (i < 4) {
+//       result += cardNumber[i];
+//     } else if (i >= 4 && i < 12) {
+//       if (i % 4 === 0) {
+//         result += ' ';
+//       }
+//       result += '*';
+//     } else {
+//       if (i === 12) {
+//         result += ' ';
+//       }
+//       result += cardNumber[i];
+//     }
+//   }
+//   if (cardNumber.startsWith("8600")) {
+//     return `Bu UzCard karta: ${result}`;
+//   } else if (cardNumber.startsWith("9860")) {
+//     return `Bu Humo karta: ${result}`;
+//   }
+//   return result;
+// }
+
+// console.log(showTheCard(num));
+
+// console.log(Math.random() * 30) + 20;
+
+// function validatePIN(pin) {
+//      var n = pin.length;
+//     if (n != 4 && n != 6)
+//         return false;
+//     for (var i in pin)
+//         if (pin[i] > '9' || pin[i] < '0')
+//             return false;
+//     return true;
+// }
+// console.log(validatePIN("1234"));
+
+// let res = ["fdf", 'sd']
 
 
 
 
+// function substr(s, n1, n2) {
+//     if (n2 <= 0) {
+//         return ''
+//     } else if (n2 > s.length) {
+//         n2 = s.length
+//     };
+//     let res = ''
+//     for (let i = n1; i < n2; i++) {
+//         res += s[i]
+//     }
+//     return res
+// }
+// console.log(substr('workspace', 1, 9));
 
+// function substring(string, num1, num2) {
+//     if (num1 < 0 && num2 < 0) {
+//         return ''
+//     } else if (num1 > num2) {
+//         let num = num1
+//         num1 = num2
+//         num2 = num
+//     }
+//     let res = ''
+//     for (let i = num1; i < num2 && string.length; i++) {
+//         res += string[i]
+//     }
+//     return res
+// }
+// console.log(substring('Farrux', 5, 1));
+
+// function newSlice(string, num1, num2) {
+//     if (num1 > num2) {
+//         return ''
+//     } else if (num2 > string.length) {
+//         num2 = string.length
+//     };
+//     if (num1 < 0 && num2 < 0) {
+//         let num = num1
+//         num1 = num2 - num2 * 2
+//         num2 = num - num * 2
+//     }
+//     let res = ''
+//     for (let i = num1; i < num2 && string.length; i++) {
+//         res += string[i]
+//     }
+//     return res
+// }
+// console.log(newSlice('workspace', 1, 9));
+
+
+
+// function customSlice(array, start, end) {
+//     start = start ?? 0;
+//     end = end ?? array.length;
+//     if (start < 0) start = Math.max(array.length + start, 0);
+//     if (end < 0) end = Math.max(array.length + end, 0);
+//     const result = [];
+//     for (let i = start; i < end && i < array.length; i++) {
+//         result.push(array[i]);
+//         return typeof array === "string" ? result.join('') : result;
+//     }
+//     console.log(customSlice([1, 2, 3, 4, 5], 1, 4)); // [2, 3, 4]
+//     console.log(customSlice([1, 2, 3, 4, 5], -3));   // [3, 4, 5]
+//     console.log(customSlice("Hello, world!", 7, 12)); // "world"
+// }
+
+// let a = 'frontend'
+// function slice(s, p1, p2) {
+//     let res = ''
+//     if (p1 < p2) {
+//         for (let i = 0; i < s.length; i++) {
+//             if (p1 <= i && i < p2) {
+//                 res += s[i]
+//             }
+//             if (p1 == -p1 || p2 == -p2) {
+//                 for (let i = s.length - 1; i > 0; i++) {
+//                     if (p1 <= i && i < p2) {
+//                         res += s[i]
+//                     }
+//                     else {
+//                         console.log('else2')
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     return res
+// }
+// console.log(slice('frontend', 1, 5));
+// console.log(a.slice(-5, -1));
+
+
+
+// function Slice(str, start, end) {
+//     let result = '';
+//     if (start < 0) start = str.length + start;
+//     if (end < 0) end = str.length + end;
+//     if (start < 0) start = 0;
+//     if (end > str.length) end = str.length;
+//     for (let i = start; i < end; i++) {
+//         result += str[i];
+//     }
+//     return result;
+// }
+// console.log(customSlice("Hello", 1, -1));
+
+// function newSlice(string, num1, num2) {
+//     if (num1 > num2) {
+//         return ''
+//     }
+//     if (num2 > string.length) {
+//         num2 = string.length
+//     }
+//     if (num1 < 0 && num1 < num2) {
+//         return ''
+//     }
+//     if (num1 < 0 && num2 < 0) {
+//         let num = num1  
+//         num1 = num2 - num2 * 2
+//         num2 = num - num * 2
+//     }
+//     let res = ''
+//     for (let i = num1; i < num2 && string.length; i++) {
+//         res += string[i]
+//     }
+//     return res
+// }
+// console.log(newSlice('hello', 1, 9));
+
+
+// function substring(str, start, end) {
+//     if (start < 0 && end < 0) {
+//         return ''
+//     } else if (start > end) {
+//         let num = start
+//         start = end
+//         end = num
+//     }
+//     let resultult = ''
+//     for (let i = start; i < end && str.length; i++) {
+//         resultult += str[i]
+//     }
+//     return resultult
+// }
+// console.log(substring('hello', -2, -4));
+
+
+// function substr(str, start, end) {
+//     if (end <= 0) {
+//         return ''
+//     } else if (end > str.length) {
+//         end = str.length
+//     };
+//     let resultult = ''
+//     for (let i = start; i < end; i++) {
+//         resultult += str[i]
+//     }
+//     return resultult
+// }
+// console.log(substr('woxa', 1, 9));
+
+// function slice(str, start, end) {
+//     let result = ''
+//     if (start < 0 && start < end) {
+//         return ''
+//     }
+//     for (let i = start; i < end; i++) {
+//         result += str[i]
+//     }
+//     return result.toUpperCase()
+// }
+// console.log(slice("textArea", 1, 9))
+
+// let num1 = 0
+// let num2 = 5
+// let num3 = 0
+// if (num1 && num2 <= num3) {
+//     console.log(num3);
+// }
+// else if (num3 && num1 <= num2) {
+//     console.log(num2);
+// } else if (num2 && num3 <= num1) {
+//     console.log(num1);
+// }
+// else {
+//     console.log('number');
+// }
+// (function () {
+//     console.log(1);
+//     setTimeout(() => { console.log(2); }, 2000)
+//     setTimeout(() => { console.log(3); }, 1000)
+//     console.log(4);
+// })
 
 
